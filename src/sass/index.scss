@@ -1,12 +1,12 @@
 //utils
-@import './utils/_vars';
+@import './utils/vars';
 
 //common style
 @import './common';
 @import './example';
 
-
-@import './layouts/_header';
+@import './layouts/base';
+@import './layouts/header';
 @import './layouts/menu';
 @import './layouts/about';
 @import './layouts/program';
@@ -15,4 +15,4 @@
 @import './layouts/reviews';
 @import './layouts/registration';
 @import './layouts/contact';
-@import './layouts/_footer';
+@import './layouts/footer';
