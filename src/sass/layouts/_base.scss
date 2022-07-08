@@ -13,25 +13,25 @@ body {
 }
 
 .container {
-  max-width: 100%;
+  max-width: 320px;
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (min-width: 320px) {
-    max-width: 320px;
-  }
   @media screen and (min-width: 768px) {
     max-width: 768px;
   }
+
   @media screen and (min-width: 1280px) {
     max-width: 1280px;
   }
 }
+
 .list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
+
 .link {
   text-decoration: none;
   list-style: none;
@@ -41,28 +41,22 @@ img {
   max-width: 100%;
   height: auto;
 }
-ul {
-  list-style: none;
-}
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+
 .section {
-  /* max-width: 280px; */
+  max-width: 280px;
 
   padding-left: 20px;
   padding-right: 20px;
 
   @media screen and (min-width: 768px) {
-    max-width: 520px;
+    max-width: 704px;
 
     padding-left: 32px;
     padding-right: 32px;
   }
+
   @media screen and (min-width: 1280px) {
-    max-width: 1248px;
+    max-width: 1251px;
 
     padding-left: 16px;
     padding-right: 16px;

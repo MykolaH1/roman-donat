@@ -1,12 +1,15 @@
 .contact-conteiner {
+    max-width: 320px;
     padding: 32px 20px;
     margin-left: auto;
     margin-right: auto;
+
 }
 
 .contact {
 
     text-align: center;
+    margin-bottom: 32px;
 }
 
 .contact__title {
@@ -15,6 +18,9 @@
 
 .contact__text {
     margin-bottom: 16px;
+
+    @include FontWSL (400, 16px, 1.25);
+
 }
 
 .contact__form {
@@ -34,6 +40,7 @@ textarea {
     height: 22px;
     resize: none;
     padding: 0;
+    @include FontWSL (400, 16px, 1.25);
 
     &::placeholder {
         color: rgba(171, 129, 108, 0.5);
@@ -54,4 +61,7 @@ textarea {
     color: #FFFFFF;
     width: 145px;
     height: 40px;
+    font-family: 'Caveat Brush';
+    @include FontWSL (400, 18px, 1.5);
+
 }
