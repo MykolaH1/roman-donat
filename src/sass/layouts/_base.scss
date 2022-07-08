@@ -1,5 +1,17 @@
 body {
   margin: 0;
+  background-image: url(../images/background/bg-header_sm.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: cover;
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/background/bg-header_md.svg);
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/background/bg-header_lg.svg);
+  }
 
   font-family: 'Montserrat';
   font-size: 16px;
@@ -42,30 +54,43 @@ body {
 .link {
   text-decoration: none;
   list-style: none;
+  color: inherit;
 }
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.section {
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+/* .section {
   max-width: 280px;
-
-
 
   @media screen and (min-width: 768px) {
     max-width: 704px;
-
-
   }
 
   @media screen and (min-width: 1280px) {
     max-width: 1251px;
-
-
   }
-}
+} */
 
 .section-title {
   font-family: 'Caveat Brush';
