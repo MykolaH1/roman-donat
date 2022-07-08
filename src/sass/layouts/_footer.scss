@@ -1,0 +1,22 @@
+.footer {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 0
+}
+
+.contact-nav {
+    display: flex;
+    justify-content: space-between;
+    @include FontWSL (400, 16px, 1.25);
+    fill: black;
+}
+
+// .footer.section {
+//     padding: 0;
+// }
