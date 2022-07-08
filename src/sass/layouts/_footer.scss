@@ -7,16 +7,21 @@
     display: flex;
     justify-content: center;
     gap: 16px;
-    margin: 0
+    margin: 0;
+    margin-bottom: 32px;
 }
 
 .contact-nav {
     display: flex;
     justify-content: space-between;
     @include FontWSL (400, 16px, 1.25);
-    fill: black;
+    fill: var(--primary-text-color);
 }
 
-// .footer.section {
-//     padding: 0;
-// }
+.footer.section {
+    padding: 0;
+}
+
+.contact-nav__icon {
+    color: var(--primary-text-color);
+}
