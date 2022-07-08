@@ -1,0 +1,35 @@
+.price {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.price_heading {
+  margin-top: 0;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.price_content {
+  display: flex;
+  gap: 32px;
+}
+
+.price_block {
+  padding-top: 28px;
+  padding-bottom: 40px;
+  padding-left: 29px;
+  padding-right: 29px;
+
+  background: #fef3e4;
+  background-image: url(../images/background/bg-price_lg.png);
+  border-radius: 40px;
+}
+
+.price_title {
+  margin: 0;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.price_list {
+  margin-bottom: 160px;
+}
