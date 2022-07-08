@@ -10,7 +10,8 @@
    margin: 0;
 }
 .speakers_list{
-   
+   background-color: var(--primary-bcg-color);
+   background-image: url('../images/background/bg-speakers_sm.svg');
    border-radius: 20px;
    padding-top: 80px;
    padding-bottom: 16px;
