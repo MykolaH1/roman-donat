@@ -1,9 +1,9 @@
 .contact {
-    max-width: 480px;
-    padding: 32px 20px;
-    margin-left: auto;
-    margin-right: auto;
-
+    // max-width: 480px;
+    // padding: 32px 20px;
+    // margin-left: auto;
+    // margin-right: auto;
+    margin-bottom: 32px;
     text-align: center;
 
 }
@@ -17,6 +17,10 @@
 
     @include FontWSL (400, 16px, 1.25);
 
+    @media screen and (min-width: 1280px) {
+        @include FontWSL (400, 18px, 1.22);
+
+    }
 }
 
 .contact__form {
@@ -44,6 +48,16 @@ textarea {
         font-size: 16px;
         line-height: 1.25;
     }
+
+    @media screen and (min-width: 768px) {
+        width: 336px;
+        height: 22px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 394px;
+        height: 22px;
+    }
 }
 
 .contact__btn {
@@ -59,5 +73,22 @@ textarea {
     height: 40px;
     font-family: 'Caveat Brush';
     @include FontWSL (400, 18px, 1.5);
+    cursor: pointer;
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 182px;
+        height: 45px;
+    }
 
 }
