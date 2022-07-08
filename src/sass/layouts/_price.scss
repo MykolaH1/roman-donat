@@ -7,6 +7,14 @@
   margin-top: 0;
   margin-bottom: 40px;
   text-align: center;
+
+  font-family: 'Caveat Brush';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: calc(45 / 36);
+
+  color: #2e2520;
 }
 
 .price_content {
@@ -15,21 +23,81 @@
 }
 
 .price_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 610px;
   padding-top: 28px;
   padding-bottom: 40px;
   padding-left: 29px;
   padding-right: 29px;
 
   background: #fef3e4;
-  background-image: url(../images/background/bg-price_lg.png);
+
+  background-repeat: no-repeat;
   border-radius: 40px;
+
+  &:nth-child(1) {
+    background-image: url(../images/background/bg-price_lg.png),
+      url(../images/price/img-1_lg.png);
+    background-position: top 0px center, top 257px left 0px;
+  }
+  &:nth-child(2) {
+    background-image: url(../images/background/bg-price_lg.png),
+      url(../images/price/img-2_lg.png);
+    background-position: top 0px center, top 257px left 0px;
+  }
+  &:nth-child(3) {
+    background-image: url(../images/background/bg-price_lg.png),
+      url(../images/price/img-3_lg.png);
+    background-position: center top 0px, top 464px right 0px;
+  }
 }
 
 .price_title {
   margin: 0;
   margin-bottom: 40px;
   text-align: center;
+
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  text-align: center;
+  color: #2e2520;
 }
+
 .price_list {
-  margin-bottom: 160px;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.price_text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+
+  color: #2e2520;
+}
+
+.prise_btn {
+  width: 145px;
+  height: 40px;
+  text-align: center;
+  background: #ab816c;
+  border: 0;
+  border-radius: 25px;
+  margin-top: auto;
+
+  font-family: 'Caveat Brush';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(23 / 18);
+  color: #ffffff;
 }
