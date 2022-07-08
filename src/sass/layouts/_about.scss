@@ -9,8 +9,9 @@
 // .about__img {
 // }
 
-// .about__info {
-// }
+.about__info {
+  max-width: 280px;
+}
 
 .about__title {
   font-family: 'Caveat Brush';
@@ -19,6 +20,8 @@
   font-size: 24px;
   line-height: 1.25;
   text-align: center;
+  margin-top: 17px;
+  margin-bottom: 8px;
 
   color: var(--primary-text-color);
 }
@@ -71,5 +74,35 @@
   .about__title {
     display: flex;
     justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about__text,
+  .about__text--down {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    line-height: 22px;
+
+    color: var(--primary-text-color);
+  }
+
+  .about__info {
+    max-width: 392px;
+    margin-left: 140px;
+  }
+
+  .about__title {
+    font-size: 36px;
+    line-height: 1.25;
+    margin-bottom: 30px;
+  }
+
+  .about__text--down {
+    display: block;
+  }
+
+  .about__btn {
+    display: none;
   }
 }
