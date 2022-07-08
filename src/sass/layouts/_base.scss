@@ -38,31 +38,29 @@ body {
 }
 ul {
   list-style: none;
+img{
+   display: block;
+   max-width: 100%;
+   height: auto;
 }
+.section{
+   max-width: 280px;
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-.section {
-  max-width: 280px;
+   // padding-left: 20px;
+   // padding-right: 20px;
+   
+   @media screen and (min-width: 768px){
+      max-width: 704px;
 
-  padding-left: 20px;
-  padding-right: 20px;
+      // padding-left:  32px;
+      // padding-right: 32px;
+   }
+   @media screen and (min-width: 1280px){
+      max-width: 1251px;
 
-  @media screen and (min-width: 768px) {
-    max-width: 520px;
-
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-  @media screen and (min-width: 1280px) {
-    max-width: 1248px;
-
-    padding-left: 16px;
-    padding-right: 16px;
-  }
+      // padding-left:  16px;
+      // padding-right: 16px;
+   }
 }
 
 .section-title {
@@ -76,4 +74,5 @@ img {
     font-size: 36px;
     line-height: calc(45px / 36px);
   }
+}
 }
