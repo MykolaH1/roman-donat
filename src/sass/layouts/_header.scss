@@ -1,0 +1,48 @@
+.header {
+  margin: 0;
+  padding-top: 16px;
+  background-image: url(../images/header/img-1_sm.png);
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/header/img-1_sm@2x.png);
+  }
+  background-repeat: no-repeat;
+  &__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  &__logo-wrapper {
+    display: flex;
+    height: 50px;
+    width: 96px;
+  }
+  &__logo {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    display: inline-block;
+  }
+
+  &__title {
+    font-family: 'Caveat Brush';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    color: #2e2520;
+  }
+  &__menu-btn {
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    background: none;
+    border: none;
+  }
+  &__btn-icon > .cross {
+    display: none;
+  }
+}
