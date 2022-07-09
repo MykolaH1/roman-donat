@@ -3,30 +3,35 @@
     <article>
       <h2 class="reviews__title">Reviews</h2>
       <div class="reviews__container">
-        <picture class="reviews__picture--hidden">
-          <source
-            media="(min-width:1280px)"
-            srcset="
-              ./images/reviews/img-1_lg.png    1x,
-              ./images/reviews/img-1_lg@2x.png 2x
-            "
-          />
-          <source
-            media="(min-width:768px)"
-            srcset="
-              ./images/reviews/img-1_md.png    1x,
-              ./images/reviews/img-1_md@2x.png 2x
-            "
-          />
+        <div>
+          <picture class="reviews__picture--hidden">
+            <source
+              media="(min-width:1280px)"
+              srcset="
+                ./images/reviews/img-1_lg.png    1x,
+                ./images/reviews/img-1_lg@2x.png 2x
+              "
+            />
+            <source
+              media="(min-width:768px)"
+              srcset="
+                ./images/reviews/img-1_md.png    1x,
+                ./images/reviews/img-1_md@2x.png 2x
+              "
+            />
 
-          <img src="./images/reviews/img-1_md.png " alt="Will's review" />
+            <img src="./images/reviews/img-1_md.png " alt="Will's review" />
+          </picture>
+
           <div class="reviews__icon--down">
             <svg width="136" height="24">
               <use href="./images/icons/symbol-defs.svg#icon-starsrates"></use>
             </svg>
           </div>
           <p class="reviews__name">John</p>
-        </picture>
+        </div>
+
+        <div>
 
         <picture class="reviews__picture--hidden">
           <source
@@ -45,7 +50,11 @@
           />
 
           <img src=" ./images/reviews/img-2_md.png " alt="Will's review" />
-          <div class="reviews__icon--down">
+          
+          <div>
+        </picture>
+
+        <div class="reviews__icon--down">
             <svg width="136" height="24">
               <use
                 href="./images/icons/symbol-defs.svg#icon-starsratestar"
@@ -53,7 +62,7 @@
             </svg>
           </div>
           <p class="reviews__name">Elisabeth</p>
-        </picture>
+          </div>
       </div>
 
       <div class="reviews__container--down">
@@ -101,6 +110,7 @@
           and highly recommend it to everyone!
         </p>
       </div>
+      
     </article>
   </div>
 </section>
