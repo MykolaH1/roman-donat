@@ -1,21 +1,56 @@
 body {
-  margin: 0;
   background-image: url(../images/background/bg-header_sm.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover 460px;
   background-position: top center;
 
-  @media screen and (min-width: 320) and (max-width: 420px) {
-    background-position: top center;
+  @media screen and (min-width: 360px) {
+    background-size: 100%;
+    background-position: center top -30px;
+  }
+
+  @media screen and (min-width: 375px) {
+    background-size: 100%;
+    background-position: center top -40px;
+  }
+
+  @media screen and (min-width: 390px) {
+    background-size: 100%;
+    background-position: center top -60px;
+  }
+
+  @media screen and (min-width: 414px) {
+    background-size: 100%;
+    background-position: center top -90px;
+  }
+
+  @media screen and (min-width: 480px) {
+    background-size: 100%;
+    background-position: center top -160px;
+  }
+
+  @media screen and (min-width: 667px) {
+    background-size: 100%;
+    background-position: center top -380px;
+  }
+
+  @media screen and (min-width: 740px) {
+    background-size: 100%;
+    background-position: center top -460px;
   }
 
   @media screen and (min-width: 768px) {
     background-image: url(../images/background/bg-header_md.svg);
+    background-size: 769px 622px;
+    background-position: center top;
   }
 
   @media screen and (min-width: 1280px) {
+    /* background-color: #fffff9; */
     background-image: url(../images/background/bg-header_lg.svg);
   }
+
+  margin: 0;
 
   font-family: 'Montserrat';
   font-size: 16px;
@@ -84,17 +119,17 @@ h4 {
   margin: 0;
 }
 
-/* .section {
-  max-width: 280px;
+.section {
+  max-width: 480px;
 
   @media screen and (min-width: 768px) {
-    max-width: 704px;
+    max-width: 768px;
   }
 
   @media screen and (min-width: 1280px) {
-    max-width: 1251px;
+    max-width: 1280px;
   }
-} */
+}
 
 .section-title {
   font-family: 'Caveat Brush';
