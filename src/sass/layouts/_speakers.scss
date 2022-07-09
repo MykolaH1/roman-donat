@@ -1,12 +1,13 @@
 .speakers{
-   // max-width: 100%;
+   max-width: 100%;
 
    margin-left: auto;
    margin-right: auto;
 
    @media screen and (min-width: 480px) {
-      max-width: 280px;
+      max-width: 480px;
    }
+   
    @media screen and (min-width: 768px) {
       max-width: 704px;
    }
@@ -25,24 +26,30 @@
 }
 
 .speakers_title {
+   font-weight: 400;
    margin: 0;
 }
 
 .speakers_list {
-   padding-top: 80px;
+   max-width: 100%;
+   padding-top: 180px;
    padding-bottom: 16px;
 
    display: flex;
+   justify-content: space-between;
    flex-wrap: wrap;
    gap: 20px;
+   @media screen and (max-width: 480px){
+      max-width: 480px;
+   }
    @media screen and (max-width: 767px){
       background: var(--primary-bcg-color) url('../images/background/bg-speakers_sm.svg');
       background-repeat: no-repeat;
+      background-size: contain;
       border-radius: 20px;
       
       
    }
-   
    @media screen and (min-width: 768px) and (max-width: 1279px){
       background:var(--primary-bcg-color) url('../images/background/bg-speakers_md.svg');
       
@@ -66,31 +73,35 @@
 }
 
 .speakers_list-item {
-   width: 130px;
+   width: 40vw;
 
+   @media screen and (min-width: 480px){
+      width: 191px;
+   }
    @media screen and (min-width: 768px) {
-      width: 152px;
+      max-width: 152px;
    }
    @media screen and (min-width: 1280px) {
-      width: 181px;
+      max-width: 181px;
    }
 }
 
 .speakers_img {
-   max-width: 100%;
+   width: 50vw;
    border-radius: 0%;
 
    padding-bottom: 12px;
+   @media screen and (min-width: 480px) {
+      // width: 191px;
+   }
 
    @media screen and (min-width: 768px) {
-      width: 152px;
-      height: 152px;
+      // width: 152px;
 
       padding-bottom: 20px;
    }
    @media screen and (min-width: 1280px) {
       width: 181px;
-      height: 181px;
 
       padding-bottom: 20px;
    }
@@ -130,7 +141,7 @@
       line-height: calc(17px / 14px);
       padding-bottom: 20px;
    }
-   @media screen and (min-width: 768px) {
+   @media screen and (min-width: 1280px) {
       font-size: 16px;
       line-height: calc(20px / 16px);
    }
