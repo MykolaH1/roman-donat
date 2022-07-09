@@ -1,78 +1,99 @@
-<section class="reviews container section">
-  <h2 class="reviews__title">Reviews</h2>
-  <picture class="reviews__picture--hidden">
-    <source
-      media="(min-width:1280px)"
-      srcset="
-        ./images/reviews/img-1_lg.png    1x,
-        ./images/reviews/img-1_lg@2x.png 2x
-      "
-    />
-    <source
-      media="(min-width:768px)"
-      srcset="
-        ./images/reviews/img-1_md.png    1x,
-        ./images/reviews/img-1_md@2x.png 2x
-      "
-    />
+<section class="reviews">
+  <div class="container">
+    <h2 class="reviews__title">Reviews</h2>
+    <div class="reviews__container">
+      <picture class="reviews__picture--hidden">
+        <source
+          media="(min-width:1280px)"
+          srcset="
+            ./images/reviews/img-1_lg.png    1x,
+            ./images/reviews/img-1_lg@2x.png 2x
+          "
+        />
+        <source
+          media="(min-width:768px)"
+          srcset="
+            ./images/reviews/img-1_md.png    1x,
+            ./images/reviews/img-1_md@2x.png 2x
+          "
+        />
 
-    <img src="./images/reviews/img-1_md.png " alt="Will's review" />
-  </picture>
+        <img src="./images/reviews/img-1_md.png " alt="Will's review" />
+        <div class="reviews__icon--down">
+          <svg width="136" height="24">
+            <use href="./images/icons/symbol-defs.svg#icon-starsrates"></use>
+          </svg>
+        </div>
+        <p class="reviews__name">John</p>
+      </picture>
 
-  <picture class="reviews__picture--hidden">
-    <source
-      media="(min-width:1280px)"
-      srcset="
-        ./images/reviews/img-2_lg.png    1x,
-        ./images/reviews/img-2_lg@2x.png 2x
-      "
-    />
-    <source
-      media="(min-width:768px)"
-      srcset="
-        ./images/reviews/img-2_md.png    1x,
-        ./images/reviews/img-2_md@2x.png 2x
-      "
-    />
+      <picture class="reviews__picture--hidden">
+        <source
+          media="(min-width:1280px)"
+          srcset="
+            ./images/reviews/img-2_lg.png    1x,
+            ./images/reviews/img-2_lg@2x.png 2x
+          "
+        />
+        <source
+          media="(min-width:768px)"
+          srcset="
+            ./images/reviews/img-2_md.png    1x,
+            ./images/reviews/img-2_md@2x.png 2x
+          "
+        />
 
-    <img src=" ./images/reviews/img-2_md.png " alt="Will's review" />
-  </picture>
-  <div class="reviews__container">
-    <picture class="reviews__picture">
-      <source
-        media="(min-width:1280px)"
-        srcset="
-          ./images/reviews/img-3_lg.png    1x,
-          ./images/reviews/img-3_lg@2x.png 2x
-        "
-      />
-      <source
-        media="(min-width:768px)"
-        srcset="
-          ./images/reviews/img-3_md.png    1x,
-          ./images/reviews/img-3_md@2x.png 2x
-        "
-      />
-      <source
-        media="(max-width:480px)"
-        srcset="
-          ./images/reviews/img-1_sm.png    1x,
-          ./images/reviews/img-1_sm@2x.png 2x
-        "
-      />
+        <img src=" ./images/reviews/img-2_md.png " alt="Will's review" />
+        <div class="reviews__icon--down">
+          <svg width="136" height="24">
+            <use href="./images/icons/symbol-defs.svg#icon-starsratestar"></use>
+          </svg>
+        </div>
+        <p class="reviews__name">Elisabeth</p>
+      </picture>
+    </div>
 
-      <img src="./images/reviews/img-1_sm.png" alt="Will's review" />
-    </picture>
+    <div class="reviews__container--down">
+      <picture class="reviews__picture">
+        <source
+          media="(min-width:1280px)"
+          srcset="
+            ./images/reviews/img-3_lg.png    1x,
+            ./images/reviews/img-3_lg@2x.png 2x
+          "
+        />
+        <source
+          media="(min-width:768px)"
+          srcset="
+            ./images/reviews/img-3_md.png    1x,
+            ./images/reviews/img-3_md@2x.png 2x
+          "
+        />
+        <source
+          media="(max-width:480px)"
+          srcset="
+            ./images/reviews/img-1_sm.png    1x,
+            ./images/reviews/img-1_sm@2x.png 2x
+          "
+        />
+
+        <img src="./images/reviews/img-1_sm.png" alt="Will's review" />
+      </picture>
+      <div class="reviews__icon--down">
+        <svg width="136" height="24">
+          <use href="./images/icons/symbol-defs.svg#icon-starsratestar"></use>
+        </svg>
+      </div>
+      <p class="reviews__name">Will</p>
+      <p class="reviews__text">
+        Last time I have visited a cooking course by Eva <br />
+        I was impressed with the way she explained everything <br />
+        to people. You can be sure you will manage to cook a delicious dish even
+        if it is your first time in the kitchen! <br />
+        Thank you so much for the masterclass! Looking forward to the next one
+        and highly <br />
+        recommend it to everyone!
+      </p>
+    </div>
   </div>
-  <svg class="reviews__icon" width="136" height="24">
-    <use href="./images/icons/symbol-defs.svg#icon-starsratestar"></use>
-  </svg>
-  <p class="reviews__name">Will</p>
-  <p class="reviews__text">
-    Last time I have visited a cooking course by Eva I was impressed with the
-    way she explained everything to people. You can be sure you will manage to
-    cook a delicious dish even if it is your first time in the kitchen! Thank
-    you so much for the masterclass! Looking forward to the next one and highly
-    recommend it to everyone!
-  </p>
 </section>
