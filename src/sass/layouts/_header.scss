@@ -58,10 +58,6 @@
   &__nav-wrapper {
     display: flex;
     gap: 55px;
-
-    @media screen and(max-width:1279px) {
-      display: none;
-    }
   }
 
   &__nav-list {
@@ -69,6 +65,10 @@
     gap: 20px;
     height: fit-content;
     white-space: nowrap;
+
+    @media screen and(max-width:1279px) {
+      display: none;
+    }
   }
 
   &__nav-item {
@@ -161,9 +161,6 @@
     .logo {
       height: auto;
       object-fit: 100% auto;
-
-      @media screen and(min-width:1280px) {
-      }
     }
   }
 
