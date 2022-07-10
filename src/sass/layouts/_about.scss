@@ -141,15 +141,15 @@
     display: block;
     position: relative;
     z-index: 10;
-    left: -95px;
+    left: -17px;
     top: -591px;
     transform-origin: center left;
     transition-duration: 1000ms;
   }
 
   .about__spoon:hover {
-    left: -91px;
-    transform: rotate(20deg);
+    left: -15px;
+    transform: rotate(15deg);
     transition: transform 5000ms cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 }
