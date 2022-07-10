@@ -22,6 +22,7 @@
     margin: 0;
     margin-bottom: 32px;
 
+
     @media screen and (min-width: 768px) {
         margin-bottom: 60px;
     }
@@ -95,16 +96,39 @@
     position: absolute;
     z-index: -1;
 
+    animation-name: scale;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+
+    @keyframes scale {
+        0% {
+            -webkit-transform: scale(1.0);
+
+        }
+
+        50% {
+            -webkit-transform: scale(1.2);
+
+        }
+
+        100% {
+            -webkit-transform: scale(1.0);
+
+        }
+    }
 
     @media screen and (min-width: 768px) {}
 
     // bottom: -19px;
     // right: -23px;
 
-    @media screen and (min-width: 1280px) {}
+    @media screen and (min-width: 1280px) {
 
-    position: absolute;
-    bottom: 75px;
-    right: 50%;
-
+        position: absolute;
+        bottom: 75px;
+        right: calc(100% - (50% + 640px));
+    }
 }
