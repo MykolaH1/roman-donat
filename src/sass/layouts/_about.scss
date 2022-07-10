@@ -9,25 +9,19 @@
   }
 
   @media screen and (min-width: 1280px) {
-    top: 500px;
+    top: 550px;
   }
 }
 
-.about__container {
-  /* background-color: var(--form-bcg-color); */
-}
-
-// .about__img {
+// .about {
+//   background-image: url(../images/about_us/spoon-1.png);
+//   background-repeat: no-repeat;
 // }
 
-// }
 .about__picture {
   display: flex;
   justify-content: center;
 }
-
-// .about__title {
-// }
 
 .about__info {
   max-width: 280px;
@@ -82,6 +76,9 @@
   border: none;
   display: block;
 }
+.about__spoon {
+  display: none;
+}
 
 @media screen and (min-width: 768px) {
   .about__container {
@@ -102,6 +99,11 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .about__container {
+    position: relative;
+    justify-content: center;
+  }
+
   .about__text,
   .about__text--down {
     font-family: 'Montserrat';
@@ -110,6 +112,7 @@
 
     color: var(--primary-text-color);
   }
+
   .about__text {
     margin-top: 0px;
   }
@@ -137,5 +140,11 @@
 
   .about__btn {
     display: none;
+  }
+
+  .about__spoon {
+    display: block;
+    position: absolute;
+    top: -35px;
   }
 }

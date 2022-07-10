@@ -1,10 +1,10 @@
 .program {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 16px;
+  padding-top: 16px;
 
   @media screen and (min-width: 768px) {
-    margin-top: 32px;
+    padding-top: 32px;
   }
 
   &__container {
@@ -39,6 +39,10 @@
   &__title {
     margin-bottom: 8px;
     font-size: 24px;
+
+    @media screen and (min-width: 768px) {
+      text-align: start;
+    }
 
     @media screen and (min-width: 1280px) {
       margin-bottom: 20px;
@@ -77,6 +81,10 @@
 
       background-image: url(../images/program/list_icon.svg);
       background-repeat: no-repeat;
+
+      @media screen and (min-width: 1280px) {
+        top: 4px;
+      }
     }
   }
 
@@ -160,6 +168,14 @@
     align-items: center;
     justify-content: start;
     padding-top: 50px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 53px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding-top: 65px;
+    }
 
     gap: 5px;
 
@@ -257,11 +273,24 @@
   &__item-title {
     font-family: Caveat Brush, sans-serif;
     @include FontWSL(400, 18, calc(22 / 18));
-    margin-top: 4px;
+    margin-bottom: 4px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
   }
 
   &__item-parametr {
     font-family: Montserrat, sans-serif;
     @include FontWSL(400, 14, calc(17 / 14));
+
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+    }
   }
 }
