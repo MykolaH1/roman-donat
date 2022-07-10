@@ -1,0 +1,73 @@
+.footer {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 232px;
+    position: relative;
+    overflow: hidden;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 0;
+    margin-bottom: 32px;
+
+}
+
+.social__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    fill: var(--primary-text-color);
+
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: white;
+        background-color: #AB816C;
+    }
+}
+
+
+.contact-nav {
+    display: flex;
+    justify-content: space-between;
+    @include FontWSL (400, 16px, 1.25);
+
+
+    & a {
+        color: var(--primary-text-color);
+        transition-property: fill, color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: #AB816C;
+            fill: #AB816C;
+        }
+    }
+
+}
+
+.footer .section {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.flour picture {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
