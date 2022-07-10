@@ -124,12 +124,12 @@ p {
     max-width: 768px;
   }
 
-  @media screen and (min-width: 768px) {
-    max-width: 520px;
+  // @media screen and (min-width: 768px) {
+  //   max-width: 520px;
 
-    // padding-left: 32px;
-    // padding-right: 32px;
-  }
+  //   // padding-left: 32px;
+  //   // padding-right: 32px;
+  // }
 
   @media screen and (min-width: 1280px) {
     max-width: 1248px;
