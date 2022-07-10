@@ -113,6 +113,63 @@
         background-image: url(../images/program/img-1_sm@2x.png);
       }
     }
+
+    &:nth-child(2n)::before {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      top: -34px;
+
+      background-image: url(../images/program/img-2_sm.png);
+      background-repeat: no-repeat;
+      background-size: 80px 80px;
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/program/img-2_sm@2x.png);
+      }
+    }
+
+    &:nth-child(3n):before {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      top: -34px;
+
+      background-image: url(../images/program/img-3_sm.png);
+      background-repeat: no-repeat;
+      background-size: 80px 80px;
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/program/img-3_sm@2x.png);
+      }
+    }
+
+    &:nth-child(4n):before {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      top: -34px;
+
+      background-image: url(../images/program/img-4_sm.png);
+      background-repeat: no-repeat;
+      background-size: 80px 80px;
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/program/img-4_sm@2x.png);
+      }
+    }
   }
   &__item-title {
     font-family: Caveat Brush, sans-serif;
