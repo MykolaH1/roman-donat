@@ -1,9 +1,18 @@
 .footer {
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 232px;
-    position: relative;
+    padding-bottom: 46px;
+    // position: relative;
     overflow: hidden;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 83px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-bottom: 232px;
+    }
+
 }
 
 .social {
@@ -13,6 +22,13 @@
     margin: 0;
     margin-bottom: 32px;
 
+    @media screen and (min-width: 768px) {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 73px;
+    }
 }
 
 .social__link {
@@ -31,8 +47,8 @@
 
     &:hover,
     &:focus {
-        fill: white;
-        background-color: #AB816C;
+        fill: var(--white-color);
+        background-color: var(--buttom-bcg-color);
     }
 }
 
@@ -51,11 +67,19 @@
 
         &:hover,
         &:focus {
-            color: #AB816C;
-            fill: #AB816C;
+            color: var(--buttom-bcg-color);
+            fill: var(--buttom-bcg-color);
         }
     }
 
+    @media screen and (min-width: 768px) {
+        padding-right: 60px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-left: 107px;
+        padding-right: 304px;
+    }
 }
 
 .footer .section {
@@ -70,4 +94,17 @@
     right: 0;
     position: absolute;
     z-index: -1;
+
+
+    @media screen and (min-width: 768px) {}
+
+    // bottom: -19px;
+    // right: -23px;
+
+    @media screen and (min-width: 1280px) {}
+
+    position: absolute;
+    bottom: 75px;
+    right: 50%;
+
 }
