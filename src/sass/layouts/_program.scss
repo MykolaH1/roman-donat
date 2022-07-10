@@ -1,4 +1,296 @@
 .program {
-  height: 650px;
-  padding: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 16px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+  }
+
+  &__container {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1280px) {
+      justify-content: center;
+      gap: 142px;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 55px;
+    line-height: calc(20 / 16);
+
+    @media screen and (min-width: 768px) {
+      max-width: 336px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      max-width: 392px;
+      font-size: 18px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    font-size: 24px;
+
+    @media screen and (min-width: 768px) {
+      text-align: start;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 20px;
+      font-size: 36px;
+    }
+  }
+
+  &__descr {
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__promo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    @media screen and (min-width: 1280px) {
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__promo-item {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+
+      min-width: 16px;
+      min-height: 16px;
+      left: 0;
+      top: 2px;
+
+      background-image: url(../images/program/list_icon.svg);
+      background-repeat: no-repeat;
+
+      @media screen and (min-width: 1280px) {
+        top: 4px;
+      }
+    }
+  }
+
+  &__item-text {
+    margin-left: 18px;
+  }
+
+  &__invitation {
+    display: none;
+
+    @media screen and (min-width: 1280px) {
+      display: block;
+    }
+  }
+
+  &__btn {
+    font-family: Caveat Brush, sans-serif;
+    border: none;
+    background: none;
+    @include FontWSL(400, 18, calc(23 / 18));
+    color: var(--buttom-bcg-color);
+    text-align: start;
+    padding: 0;
+
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
+  }
+  &__btn.less-btn {
+    display: none;
+  }
+
+  &__data {
+    @media screen and (min-width: 380px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    @media screen and (min-width: 380px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    @media screen and (min-width: 768px) {
+      padding: 0;
+      max-width: 336px;
+      padding-top: 16px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      max-width: 500px;
+      padding-top: 43px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 20px;
+  }
+
+  &__item {
+    position: relative;
+    width: 130px;
+    height: 130px;
+
+    @media screen and (min-width: 420px) {
+      width: 152px;
+      height: 152px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 180px;
+      height: 180px;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 50px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 53px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding-top: 65px;
+    }
+
+    gap: 5px;
+
+    background-color: var(--primary-bcg-color);
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+    &:first-child {
+      margin-bottom: 62px;
+      @media screen and (min-width: 1280px) {
+        margin-bottom: 80px;
+      }
+    }
+    &:nth-child(2n) {
+      margin-top: 34px;
+      @media screen and (min-width: 1280px) {
+        margin-top: 80px;
+      }
+    }
+    &:first-child::before {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      top: -34px;
+
+      background-image: url(../images/program/img-1_sm.png);
+      background-repeat: no-repeat;
+      background-size: 80px 80px;
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/program/img-1_sm@2x.png);
+      }
+    }
+
+    &:nth-child(2n)::before {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      top: -34px;
+
+      background-image: url(../images/program/img-2_sm.png);
+      background-repeat: no-repeat;
+      background-size: 80px 80px;
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/program/img-2_sm@2x.png);
+      }
+    }
+
+    &:nth-child(3n):before {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      top: -34px;
+
+      background-image: url(../images/program/img-3_sm.png);
+      background-repeat: no-repeat;
+      background-size: 80px 80px;
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/program/img-3_sm@2x.png);
+      }
+    }
+
+    &:nth-child(4n):before {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      top: -34px;
+
+      background-image: url(../images/program/img-4_sm.png);
+      background-repeat: no-repeat;
+      background-size: 80px 80px;
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/program/img-4_sm@2x.png);
+      }
+    }
+  }
+  &__item-title {
+    font-family: Caveat Brush, sans-serif;
+    @include FontWSL(400, 18, calc(22 / 18));
+    margin-bottom: 4px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__item-parametr {
+    font-family: Montserrat, sans-serif;
+    @include FontWSL(400, 14, calc(17 / 14));
+
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+    }
+  }
 }
