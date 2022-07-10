@@ -1,9 +1,9 @@
 .program {
   margin-left: auto;
   margin-right: auto;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 20px; */
 
   &__text {
     display: flex;
@@ -11,7 +11,6 @@
     gap: 8px;
     margin-bottom: 55px;
     line-height: calc(20 / 16);
-    max-width: 280px;
   }
 
   &__title {
@@ -63,19 +62,29 @@
   }
 
   &__data {
-    max-width: 280px;
+    @media screen and (min-width: 370px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
 
   &__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: flex-start;
+    column-gap: 20px;
   }
 
   &__item {
     position: relative;
     width: 130px;
     height: 130px;
+
+    @media screen and (min-width: 390px) {
+      width: 152px;
+      height: 152px;
+    }
 
     display: flex;
     flex-direction: column;
@@ -93,7 +102,7 @@
     }
     &:nth-child(2n) {
       margin-top: 34px;
-      margin-left: 20px;
+      /* margin-left: 20px; */
     }
     &:first-child::before {
       content: '';
