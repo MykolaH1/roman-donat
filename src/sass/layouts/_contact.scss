@@ -1,14 +1,11 @@
 .contact {
-    // max-width: 480px;
-    // padding: 32px 20px;
-    // margin-left: auto;
-    // margin-right: auto;
-    margin-bottom: 32px;
+
+    // margin-bottom: 32px;
     text-align: center;
 
 }
 
-.contact__title {
+.section-title {
     margin-bottom: 16px;
 }
 
@@ -35,7 +32,7 @@
 textarea {
     border: none;
 
-    border-bottom: 1px solid #AB816C;
+    border-bottom: 1px solid var(--buttom-bcg-color);
     width: 280px;
     height: 22px;
     resize: none;
@@ -60,19 +57,20 @@ textarea {
     }
 }
 
+
+
 .contact__btn {
-    background: #AB816C;
+    background: var(--buttom-bcg-color);
     border-radius: 25px;
     border-color: transparent;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.27;
 
-    color: #FFFFFF;
+    @include FontWSL (400, 18px, 1.27);
+
+    color: var(--white-color);
     width: 145px;
     height: 40px;
     font-family: 'Caveat Brush';
-    @include FontWSL (400, 18px, 1.5);
+
     cursor: pointer;
 
     transition-property: box-shadow;
@@ -89,6 +87,7 @@ textarea {
     @media screen and (min-width: 1280px) {
         width: 182px;
         height: 45px;
+        @include FontWSL (400, 18px, 1.5);
     }
 
 }
