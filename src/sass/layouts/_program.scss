@@ -1,4 +1,127 @@
 .program {
-  height: 650px;
-  padding: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 55px;
+    line-height: calc(20 / 16);
+    max-width: 280px;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+  }
+
+  &__promo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__promo-item {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+
+      min-width: 16px;
+      min-height: 16px;
+      left: 0;
+      top: 2px;
+
+      background-image: url(../images/program/list_icon.svg);
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__item-text {
+    margin-left: 18px;
+  }
+
+  &__invitation {
+    display: none;
+  }
+
+  &__btn {
+    font-family: Caveat Brush, sans-serif;
+    border: none;
+    background: none;
+    @include FontWSL(400, 18, calc(23 / 18));
+    color: var(--buttom-bcg-color);
+    text-align: start;
+    padding: 0;
+  }
+  &__btn.less-btn {
+    display: none;
+  }
+
+  &__data {
+    max-width: 280px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  &__item {
+    position: relative;
+    width: 130px;
+    height: 130px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 50px;
+
+    gap: 5px;
+
+    background-color: var(--primary-bcg-color);
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+    &:first-child {
+      margin-bottom: 62px;
+    }
+    &:nth-child(2n) {
+      margin-top: 34px;
+      margin-left: 20px;
+    }
+    &:first-child::before {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      top: -34px;
+
+      background-image: url(../images/program/img-1_sm.png);
+      background-repeat: no-repeat;
+      background-size: 80px 80px;
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/program/img-1_sm@2x.png);
+      }
+    }
+  }
+  &__item-title {
+    font-family: Caveat Brush, sans-serif;
+    @include FontWSL(400, 18, calc(22 / 18));
+    margin-top: 4px;
+  }
+
+  &__item-parametr {
+    font-family: Montserrat, sans-serif;
+    @include FontWSL(400, 14, calc(17 / 14));
+  }
 }
