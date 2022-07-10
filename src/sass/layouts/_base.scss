@@ -1,4 +1,11 @@
 body {
+  margin: 0;
+
+  font-family: 'Montserrat';
+  font-size: 16px;
+  line-height: calc(20px / 16px);
+  color: #2e2520;
+
   background-image: url(../images/background/bg-header_sm.svg);
   background-repeat: no-repeat;
   background-size: cover 460px;
@@ -51,7 +58,7 @@ body {
     background-size: 1280px 1035px;
   }
 
-  margin: 0;
+  margin: 0px;
 
   font-family: 'Montserrat';
   font-size: 16px;
@@ -62,6 +69,28 @@ body {
     font-size: 18px;
     line-height: calc(22px / 18px);
   }
+
+  @media screen and (min-width: 200px) {
+    background-image: url(../images/background/bg.png);
+    background-size: 324px 1303px;
+    background-position: center 3100px;
+  }
+
+  @media screen and (min-width: 480px) {
+    background-image: url(../images/background/bg.png);
+    background-size: 324px 1303px;
+    background-position: center 3100px;
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/background/vector-13.png);
+    background-size: 940px 1456px;
+    background-position: center 2470px;
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/background/vector-lg.png);
+    background-size: 1288px 2073px;
+    background-position: center 2750px;
+  }
 }
 
 .container {
@@ -70,6 +99,8 @@ body {
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+
+  // outline: 2px solid tomato;
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
@@ -103,6 +134,10 @@ img {
   height: auto;
 }
 
+.section {
+  max-width: 280px;
+}
+
 ul {
   list-style: none;
 }
@@ -127,8 +162,21 @@ h4 {
     max-width: 768px;
   }
 
+  @media screen and (min-width: 768px) {
+    max-width: 520px;
+
+    // padding-left: 32px;
+    // padding-right: 32px;
+  }
+
   @media screen and (min-width: 1280px) {
-    max-width: 1280px;
+    max-width: 1248px;
+
+    // padding-left: 16px;
+    // padding-right: 16px;
+    @media screen and (min-width: 1280px) {
+      max-width: 1280px;
+    }
   }
 }
 
