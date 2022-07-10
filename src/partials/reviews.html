@@ -3,7 +3,7 @@
    
       <h2 class="reviews__title">Reviews</h2>
       <div class="reviews__container">
-        <article>
+        <article class="reviews__slider hidden">
           <picture class="reviews__picture--hidden">
             <source
               media="(min-width:1280px)"
@@ -39,7 +39,48 @@
         </p>
         </article>
 
-        <article>
+        <article class="reviews__slider">
+        <picture class="reviews__picture">
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              ./images/reviews/img-3_lg.png    1x,
+              ./images/reviews/img-3_lg@2x.png 2x
+            "
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="
+              ./images/reviews/img-3_md.png    1x,
+              ./images/reviews/img-3_md@2x.png 2x
+            "
+          />
+          <source
+            media="(max-width:480px)"
+            srcset="
+              ./images/reviews/img-1_sm.png    1x,
+              ./images/reviews/img-1_sm@2x.png 2x
+            "
+          />
+
+          <img
+            class="img-wills"
+            src="./images/reviews/img-1_sm.png"
+            alt="Will's review"
+          />
+        </picture>
+        <div class="reviews__icon--down">
+          <svg width="136" height="24">
+            <use href="./images/icons/symbol-defs.svg#icon-starsratestar"></use>
+          </svg>
+        </div>
+        <p class="reviews__name">Will</p>
+        
+      </article>
+
+
+
+        <article class="reviews__slider hidden">
 
         <picture class="reviews__picture--hidden">
           <source
@@ -79,54 +120,18 @@
           and highly recommend it to everyone!
         </p>
         </article>
-      </div>
-
-      <article class="reviews__container--down">
-        <picture class="reviews__picture">
-          <source
-            media="(min-width:1280px)"
-            srcset="
-              ./images/reviews/img-3_lg.png    1x,
-              ./images/reviews/img-3_lg@2x.png 2x
-            "
-          />
-          <source
-            media="(min-width:768px)"
-            srcset="
-              ./images/reviews/img-3_md.png    1x,
-              ./images/reviews/img-3_md@2x.png 2x
-            "
-          />
-          <source
-            media="(max-width:480px)"
-            srcset="
-              ./images/reviews/img-1_sm.png    1x,
-              ./images/reviews/img-1_sm@2x.png 2x
-            "
-          />
-
-          <img
-            class="img-wills"
-            src="./images/reviews/img-1_sm.png"
-            alt="Will's review"
-          />
-        </picture>
-        <div class="reviews__icon--down">
-          <svg width="136" height="24">
-            <use href="./images/icons/symbol-defs.svg#icon-starsratestar"></use>
-          </svg>
-        </div>
-        <p class="reviews__name">Will</p>
-        <p class="reviews__text">
-          Last time I have visited a cooking course by Eva <br />
-          I was impressed with the way she explained everything <br />
+     
+         </div>
+          <p class="reviews__text">
+          Last time I have visited a cooking course by Eva <br>
+          I was impressed with the way she explained everything <br>
           to people. You can be sure you will manage to cook a delicious dish
           even if it is your first time in the kitchen! <br />
           Thank you so much for the masterclass! Looking forward to the next one
           and highly recommend it to everyone!
         </p>
-      </article>
-      
-   
+
+        <span class="pagination">2/15</span>
+
   </div>
 </section>
