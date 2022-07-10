@@ -1,206 +1,228 @@
 .registration {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 0;
-  padding-bottom: 180px;
-
-  background-image: url(../images/registration/img-1_lg.png),
-    url(../images/registration/img-2_lg.png);
-  background-position: left 85px bottom 240px, top 44px right -38.74px;
-  transform: rotate(69.49deg), rotate(-47.68deg);
-  background-repeat: no-repeat;
+  padding-bottom: 32px;
 
   @media screen and (min-width: 768px) {
-    .registration_heading {
-      display: 1;
+    max-width: 768px;
+    padding-bottom: 80px;
+    .registration__main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    .registration_content {
-      display: 1;
-    }
+
     .registration-mobile {
-      display: contents;
+      display: none;
     }
+
+    background-image: url(../images/registration/img-1_md.png),
+      url(../images/registration/img-2_md.png);
+    background-position: left 0px bottom 196px, top 44px right -38.74px;
+    transform: rotate(78.97deg), rotate(-47.68deg);
+    background-repeat: no-repeat;
   }
 
-  .registration_heading {
-    margin-top: 0;
-    margin-bottom: 16px;
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    padding-bottom: 180px;
+    background-image: url(../images/registration/img-1_lg.png),
+      url(../images/registration/img-2_lg.png);
+    background-position: left 85px bottom 240px, top 44px right -38.74px;
+    transform: rotate(69.49deg), rotate(-47.68deg);
+    background-repeat: no-repeat;
+    padding-bottom: 180px;
+  }
+}
+
+.registration__main {
+  display: none;
+}
+
+.registration_heading {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-family: 'Caveat Brush';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: calc(65 / 36);
+  text-align: center;
+  color: #2e2520;
+}
+
+.registration_content {
+  display: none;
+  max-height: 436px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 104px;
+
+  background: #fffff9;
+  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
+    4px 4px 4px rgba(171, 129, 108, 0.15);
+  border-radius: 150px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 704px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 822px;
+  }
+}
+
+.registration_text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  text-align: right;
+
+  color: #2e2520;
+}
+
+.registration_block {
+  display: flex;
+  flex-direction: column;
+  padding-left: 32px;
+  margin-right: 28px;
+  margin-left: 32px;
+
+  border-left: 1px solid rgba(171, 129, 108, 0.5);
+}
+
+.registration_title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+
+  margin-bottom: 28px;
+  margin-top: 0;
+}
+
+.registration_form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.registration_input {
+  width: 238px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+
+  border: none;
+  border-bottom: 1px solid #ab816c;
+  outline: transparent;
+
+  &::-moz-placeholder {
+    color: rgba(171, 129, 108, 0.5);
+    outline: transparent;
+  }
+
+  &:-ms-input-placeholder {
+    color: rgba(171, 129, 108, 0.5);
+  }
+
+  &::-webkit-input-placeholder {
+    color: rgba(171, 129, 108, 0.5);
+  }
+}
+
+.registration_btn {
+  font-family: 'Caveat Brush';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+
+  color: #ffffff;
+  padding: 8px 45px;
+  background: #ab816c;
+  border-radius: 25px;
+  border: 0;
+}
+
+.registration-mobile {
+  max-height: 436px;
+  max-width: 280px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 8px;
+
+  background: #fffff9;
+  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
+    4px 4px 4px rgba(171, 129, 108, 0.15);
+  border-radius: 150px 150px 0px 0px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 704px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 822px;
+  }
+
+  &__heading {
+    margin-bottom: 20px;
     font-family: 'Caveat Brush';
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
-    line-height: calc(65 / 36);
+    font-size: 24px;
+    line-height: calc(30 / 24);
     text-align: center;
     color: #2e2520;
   }
 
-  .registration_content {
-    display: none;
-    max-height: 436px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 104px;
+  &__text {
+    margin-bottom: 32px;
 
-    background: #fffff9;
-    box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
-      4px 4px 4px rgba(171, 129, 108, 0.15);
-    border-radius: 150px;
-
-    @media screen and (min-width: 768px) {
-      max-width: 704px;
-    }
-
-    @media screen and (min-width: 1280px) {
-      max-width: 822px;
-    }
-  }
-
-  .registration_text {
+    min-width: 114px;
+    text-align: center;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
-    line-height: calc(24 / 20);
-    text-align: right;
+    font-size: 18px;
+    line-height: calc(22 / 18);
 
     color: #2e2520;
   }
 
-  .registration_block {
+  &__block {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    padding-left: 32px;
-    margin-right: 28px;
-    margin-left: 32px;
 
-    border-left: 1px solid rgba(171, 129, 108, 0.5);
+    margin-bottom: 32px;
+    padding-top: 8px;
+
+    border-top: 1px solid rgba(171, 129, 108, 0.5);
   }
 
-  .registration_title {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-
-    margin-bottom: 28px;
-    margin-top: 0;
-  }
-
-  .registration_form {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-  }
-
-  .registration_input {
-    width: 238px;
+  &__title {
+    text-align: center;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: calc(20 / 16);
 
-    border: none;
-    border-bottom: 1px solid #ab816c;
-    outline: transparent;
-
-    &::-moz-placeholder {
-      color: rgba(171, 129, 108, 0.5);
-      outline: transparent;
-    }
-
-    &:-ms-input-placeholder {
-      color: rgba(171, 129, 108, 0.5);
-    }
-
-    &::-webkit-input-placeholder {
-      color: rgba(171, 129, 108, 0.5);
-    }
-  }
-
-  .registration_btn {
-    font-family: 'Caveat Brush';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 30px;
-    text-align: center;
-
-    color: #ffffff;
-    padding: 8px 45px;
-    background: #ab816c;
-    border-radius: 25px;
-    border: 0;
-  }
-
-  .registration-mobile {
-    max-height: 436px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 104px;
-
-    background: #fffff9;
-    box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
-      4px 4px 4px rgba(171, 129, 108, 0.15);
-    border-radius: 150px;
-
-    @media screen and (min-width: 768px) {
-      max-width: 704px;
-    }
-
-    @media screen and (min-width: 1280px) {
-      max-width: 822px;
-    }
-  }
-  &__heading {
-    margin-top: 0;
-    margin-bottom: 16px;
-    font-family: 'Caveat Brush';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: calc(65 / 36);
-    text-align: center;
-    color: #2e2520;
-  }
-
-  &__text {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: calc(24 / 20);
-    text-align: right;
-
-    color: #2e2520;
-  }
-
-  &__block {
-    display: flex;
-    flex-direction: column;
-    padding-left: 32px;
-    margin-right: 28px;
-    margin-left: 32px;
-
-    border-left: 1px solid rgba(171, 129, 108, 0.5);
-  }
-
-  &__title {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-
-    margin-bottom: 28px;
+    margin-bottom: 20px;
     margin-top: 0;
   }
 
@@ -211,7 +233,7 @@
   }
 
   &__input {
-    width: 238px;
+    width: 100%;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
