@@ -3,163 +3,175 @@
   align-items: center;
   flex-direction: column;
   padding-top: 0;
-  padding-bottom: 180px;
-
-  background-image: url(../images/registration/img-1_lg.png),
-    url(../images/registration/img-2_lg.png);
-  background-position: left 85px bottom 240px, top 44px right -38.74px;
-  transform: rotate(69.49deg), rotate(-47.68deg);
-  background-repeat: no-repeat;
+  padding-bottom: 80px;
 
   @media screen and (min-width: 768px) {
-    .registration_heading {
-      display: 1;
-    }
-    .registration_content {
-      display: 1;
-    }
     .registration-mobile {
-      display: contents;
-    }
-  }
-
-  .registration_heading {
-    margin-top: 0;
-    margin-bottom: 16px;
-    font-family: 'Caveat Brush';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: calc(65 / 36);
-    text-align: center;
-    color: #2e2520;
-  }
-
-  .registration_content {
-    display: none;
-    max-height: 436px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 104px;
-
-    background: #fffff9;
-    box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
-      4px 4px 4px rgba(171, 129, 108, 0.15);
-    border-radius: 150px;
-
-    @media screen and (min-width: 768px) {
-      max-width: 704px;
+      display: none;
     }
 
-    @media screen and (min-width: 1280px) {
-      max-width: 822px;
-    }
+    background-image: url(../images/registration/img-1_md.png),
+      url(../images/registration/img-2_md.png);
+    background-position: left -15px bottom 176px, top 44px right -38.74px;
+    transform: rotate(78.97deg), rotate(-47.68deg);
+    background-repeat: no-repeat;
   }
 
-  .registration_text {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: calc(24 / 20);
-    text-align: right;
-
-    color: #2e2520;
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/registration/img-1_lg.png),
+      url(../images/registration/img-2_lg.png);
+    background-position: left 85px bottom 240px, top 44px right -38.74px;
+    transform: rotate(69.49deg), rotate(-47.68deg);
+    background-repeat: no-repeat;
+    padding-bottom: 180px;
   }
 
-  .registration_block {
-    display: flex;
-    flex-direction: column;
-    padding-left: 32px;
-    margin-right: 28px;
-    margin-left: 32px;
+  .registration__main {
+    display: block;
+  }
+}
 
-    border-left: 1px solid rgba(171, 129, 108, 0.5);
+.registration__main {
+  display: none;
+}
+
+.registration_heading {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-family: 'Caveat Brush';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: calc(65 / 36);
+  text-align: center;
+  color: #2e2520;
+}
+
+.registration_content {
+  display: none;
+  max-height: 436px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 104px;
+
+  background: #fffff9;
+  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
+    4px 4px 4px rgba(171, 129, 108, 0.15);
+  border-radius: 150px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 704px;
   }
 
-  .registration_title {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-
-    margin-bottom: 28px;
-    margin-top: 0;
+  @media screen and (min-width: 1280px) {
+    max-width: 822px;
   }
+}
 
-  .registration_form {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-  }
+.registration_text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  text-align: right;
 
-  .registration_input {
-    width: 238px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: calc(20 / 16);
+  color: #2e2520;
+}
 
-    border: none;
-    border-bottom: 1px solid #ab816c;
+.registration_block {
+  display: flex;
+  flex-direction: column;
+  padding-left: 32px;
+  margin-right: 28px;
+  margin-left: 32px;
+
+  border-left: 1px solid rgba(171, 129, 108, 0.5);
+}
+
+.registration_title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+
+  margin-bottom: 28px;
+  margin-top: 0;
+}
+
+.registration_form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.registration_input {
+  width: 238px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+
+  border: none;
+  border-bottom: 1px solid #ab816c;
+  outline: transparent;
+
+  &::-moz-placeholder {
+    color: rgba(171, 129, 108, 0.5);
     outline: transparent;
-
-    &::-moz-placeholder {
-      color: rgba(171, 129, 108, 0.5);
-      outline: transparent;
-    }
-
-    &:-ms-input-placeholder {
-      color: rgba(171, 129, 108, 0.5);
-    }
-
-    &::-webkit-input-placeholder {
-      color: rgba(171, 129, 108, 0.5);
-    }
   }
 
-  .registration_btn {
-    font-family: 'Caveat Brush';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 30px;
-    text-align: center;
-
-    color: #ffffff;
-    padding: 8px 45px;
-    background: #ab816c;
-    border-radius: 25px;
-    border: 0;
+  &:-ms-input-placeholder {
+    color: rgba(171, 129, 108, 0.5);
   }
 
-  .registration-mobile {
-    max-height: 436px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 104px;
-
-    background: #fffff9;
-    box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
-      4px 4px 4px rgba(171, 129, 108, 0.15);
-    border-radius: 150px;
-
-    @media screen and (min-width: 768px) {
-      max-width: 704px;
-    }
-
-    @media screen and (min-width: 1280px) {
-      max-width: 822px;
-    }
+  &::-webkit-input-placeholder {
+    color: rgba(171, 129, 108, 0.5);
   }
+}
+
+.registration_btn {
+  font-family: 'Caveat Brush';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+
+  color: #ffffff;
+  padding: 8px 45px;
+  background: #ab816c;
+  border-radius: 25px;
+  border: 0;
+}
+
+.registration-mobile {
+  max-height: 436px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 104px;
+
+  background: #fffff9;
+  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
+    4px 4px 4px rgba(171, 129, 108, 0.15);
+  border-radius: 150px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 704px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 822px;
+  }
+
   &__heading {
     margin-top: 0;
     margin-bottom: 16px;
