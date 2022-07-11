@@ -7,91 +7,26 @@ body {
   line-height: calc(20px / 16px);
   color: #2e2520;
 
-  background-image: url(../images/background/bg-header_sm.svg),
-    url(../images/background/bg-bottom_sm.svg);
+  background-image: url(../images/background/bg-header_sm.png),
+    url(../images/background/bg-bottom_sm.png);
   background-repeat: no-repeat;
-  background-size: cover 460px, 324px 1303px;
-  background-position: top 0 center, center bottom 270px;
-
-  @media screen and (min-width: 360px) {
-    background-size: 100%;
-    background-position: center top -30px, center bottom 120px;
-  }
-
-  @media screen and (min-width: 375px) {
-    background-size: 100%;
-    background-position: center top -40px, center bottom 70px;
-  }
-
-  @media screen and (min-width: 390px) {
-    background-size: 100%;
-    background-position: center top -60px, center bottom;
-  }
-
-  @media screen and (min-width: 400px) {
-    background-image: url(../images/background/bg-header_sm.svg),
-      url(../images/background/bg-bottom_msm.svg);
-    background-size: 100%;
-    background-position: center top -90px, center bottom 190px;
-  }
-
-  @media screen and (min-width: 480px) {
-    background-size: 480px;
-    background-position: center top -160px, center bottom 30px;
-  }
+  background-size: 100% 460px, 100% 1303px;
+  background-position: center top, center bottom 211px;
 
   @media screen and (min-width: 768px) {
-    background-image: url(../images/background/bg-header_md.svg),
-      url(../images/background/bg-bottom_md.svg);
-    background-size: 769px 622px, 940px 1456px;
-    background-position: center top, center bottom 110px;
+    background-image: url(../images/background/bg-header_md.png),
+      url(../images/background/bg-bottom_md.png);
+    background-size: 100% 622px, 100% 1456px;
+    background-position: center top, center bottom 101px;
   }
 
   @media screen and (min-width: 1280px) {
     background-color: #fffff9;
-    background-image: url(../images/background/bg-header_lg.svg),
-      url(../images/background/bg-bottom_lg.svg);
-    background-size: 1280px 1035px, 1288px 2073px;
+    background-image: url(../images/background/bg-header_lg.png),
+      url(../images/background/bg-bottom_lg.png);
+    background-size: 100% 1035px, 100% 2073px;
     background-position: center top, center bottom;
   }
-
-  /*  margin: 0px;
-
-  font-family: 'Montserrat';
-  font-size: 16px;
-  line-height: calc(20px / 16px);
-  color: #2e2520;
-
-  @media screen and (min-width: 1280px) {
-    font-size: 18px;
-    line-height: calc(22px / 18px);
-  }
-
-  @media screen and (min-width: 200px) {
-    background-image: url(../images/background/bg.png);
-    background-size: 324px 1303px;
-    background-position: center 3100px;
-  }
-
-  @media screen and (min-width: 480px) {
-    background-image: url(../images/background/bg.png);
-    background-size: 324px 1303px;
-    background-position: center 4040px;
-  }
-  @media screen and (min-width: 768px) {
-    background-image: url(../images/background/vector-13.png);
-    background-size: 940px 1520px;
-    background-position: center 2880px;
-  }
-  @media screen and (min-width: 1280px) {
-    // background-image: url(../images/background/vector-lg.png);
-    // background-size: 1320px 2100px;
-    // background-position: center 3324px;
-    background-image: url(../images/background/bg-header_lg.svg),
-      url(../images/background/bg-bottom_lg.svg);
-    background-size: 1280px 1035px, 1288px 2073px;
-    background-position: top center, center bottom;
-  } */
 }
 
 .container {
@@ -135,10 +70,6 @@ body {
 //    height: auto;
 // }
 
-// .section {
-//    max-width: 280px;
-// }
-
 ul {
   list-style: none;
 }
@@ -155,31 +86,6 @@ h3,
 h4,
 p {
   margin: 0;
-}
-
-.section {
-  max-width: 480px;
-
-  // @media screen and (min-width: 768px) {
-  //   max-width: 704px;
-  // }
-
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-
-    //   // padding-left: 32px;
-    //   // padding-right: 32px;
-    // }
-
-    // @media screen and (min-width: 1280px) {
-    //   max-width: 1248px;
-
-    // padding-left: 16px;
-    // padding-right: 16px;
-    @media screen and (min-width: 1280px) {
-      max-width: 1280px;
-    }
-  }
 }
 
 .section-title {

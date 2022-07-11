@@ -96,7 +96,7 @@
     display: none;
 
     @media screen and (min-width: 1280px) {
-      display: block;
+      display: inline;
     }
   }
 
@@ -299,6 +299,7 @@
 
     @media screen and (min-width: 1280px) {
       font-size: 16px;
+      margin-bottom: 8px;
     }
   }
 }
@@ -308,9 +309,17 @@
     transform: scale(1) rotate(0deg);
   }
   50% {
-    transform: scale(1.3) rotate(180deg);
+    transform: scale(1.2) rotate(180deg);
   }
   100% {
     transform: scale(1) rotate(359deg);
   }
+}
+
+
+.prog__btn{
+  @media screen and (max-width: 1279px) {
+    display: flex;
+  }
+  
 }
