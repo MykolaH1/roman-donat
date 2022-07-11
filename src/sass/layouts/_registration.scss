@@ -1,40 +1,13 @@
-// ::before {
-//       content: '';
-//       position: absolute;
-
-//       min-width: 16px;
-//       min-height: 16px;
-//       left: 0;
-//       top: 2px;
-
-//       background-image: url(../images/program/list_icon.svg);
-//       background-repeat: no-repeat;
-
-//       @media screen and (min-width: 1280px) {
-//         top: 4px;
-
 .registration {
   margin-right: auto;
   margin-left: auto;
   padding-top: 0;
   padding-bottom: 32px;
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 25%;
-    z-index: 1000;
-    height: 100;
-    width: 100%;
-    background-repeat: no-repeat;
-
-    background-image: url(../images/registration/img-1_md.png);
-    background-position: right 0px bottom 196px;
-  }
-
   @media screen and (min-width: 768px) {
     max-width: 768px;
     padding-bottom: 80px;
+
     .registration__main {
       display: flex;
       flex-direction: column;
@@ -55,14 +28,40 @@
     padding-bottom: 180px;
     background-image: url(../images/registration/img-1_lg.png),
       url(../images/registration/img-2_lg.png);
-    background-position: left 85px bottom 240px, top 44px right -38.74px;
     background-repeat: no-repeat;
+    background-position: left 85px bottom 240px, top 44px right -38.74px;
     padding-bottom: 180px;
   }
 }
 
 .registration__main {
   display: none;
+
+  &::before {
+    content: ' ';
+    position: absolute;
+    z-index: -1;
+    width: 200px;
+    height: 200px;
+    left: 0px;
+    bottom: 196px;
+
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/registration/img-1_md.png);
+
+      background-repeat: no-repeat;
+      background-size: 200px 200px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      max-width: 1280px;
+      padding-bottom: 180px;
+      background-image: url(../images/registration/img-1_lg.png);
+      background-repeat: no-repeat;
+      background-position: left 85px bottom 240px;
+      padding-bottom: 180px;
+    }
+  }
 }
 
 .registration_heading {
@@ -180,6 +179,7 @@
   border: 0;
 
   cursor: pointer;
+
   &:hover,
   &:focus {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),

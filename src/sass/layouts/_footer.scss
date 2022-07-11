@@ -1,9 +1,10 @@
 .footer {
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 46px;
-  // position: relative;
-  overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 46px;
+    // position: relative;
+    overflow: hidden;
+    // margin-top: 32px;
 
   @media screen and (min-width: 768px) {
     padding-bottom: 83px;
@@ -14,16 +15,25 @@
   }
 }
 
-// .footer.container {
-//     position: relative;
-// }
+.footer .section {
+    position: relative;
+}
 
 .social {
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
   gap: 16px;
   margin: 0;
   margin-bottom: 32px;
+=======
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 0;
+    margin-top: 32px;
+    margin-bottom: 32px;
+>>>>>>> main
 
   @media screen and (min-width: 768px) {
     margin-bottom: 60px;
@@ -77,10 +87,41 @@
     padding-right: 60px;
   }
 
+<<<<<<< HEAD
   @media screen and (min-width: 1280px) {
     padding-left: 107px;
     padding-right: 304px;
   }
+=======
+.contact-nav {
+
+    display: flex;
+    justify-content: space-between;
+    @include FontWSL (400, 16px, 1.25);
+
+
+    & a {
+        color: var(--primary-text-color);
+        transition-property: fill, color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: var(--buttom-bcg-color);
+            fill: var(--buttom-bcg-color);
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-right: 60px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-left: 107px;
+        padding-right: 304px;
+    }
+>>>>>>> main
 }
 
 .footer .section {
@@ -90,16 +131,24 @@
 }
 
 .flour picture {
+<<<<<<< HEAD
   bottom: 0;
   right: -8%;
   position: absolute;
   z-index: -1;
+=======
+    top: 20px;
+    right: -60px;
+    position: absolute;
+    z-index: -1;
+>>>>>>> main
 
   animation-name: spin;
   animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 
+<<<<<<< HEAD
   @keyframes spin {
     0% {
       transform: rotate(0deg);
@@ -111,6 +160,32 @@
 
     100% {
       transform: rotate(0deg);
+=======
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        50% {
+            transform: rotate(-10deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        top: 0px;
+        right: -60px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        // bottom: -200px;
+        right: 0;
+
+>>>>>>> main
     }
   }
 
