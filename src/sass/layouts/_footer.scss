@@ -7,6 +7,7 @@
 
     @media screen and (min-width: 768px) {
         padding-bottom: 83px;
+
     }
 
     @media screen and (min-width: 1280px) {
@@ -14,6 +15,10 @@
     }
 
 }
+
+// .footer.container {
+//     position: relative;
+// }
 
 .social {
     display: flex;
@@ -92,43 +97,41 @@
 
 .flour picture {
     bottom: 0;
-    right: 0;
+    right: -8%;
     position: absolute;
     z-index: -1;
 
-    animation-name: scale;
+    animation-name: spin;
     animation-duration: 5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
 
 
-    @keyframes scale {
+    @keyframes spin {
         0% {
-            -webkit-transform: scale(1.0);
-
+            transform: rotate(0deg);
         }
 
         50% {
-            -webkit-transform: scale(1.2);
-
+            transform: rotate(10deg);
         }
 
         100% {
-            -webkit-transform: scale(1.0);
-
+            transform: rotate(0deg);
         }
     }
 
-    @media screen and (min-width: 768px) {}
 
-    // bottom: -19px;
-    // right: -23px;
+    @media screen and (min-width: 768px) {
+
+        // right: calc(100% - 20px);
+    }
 
     @media screen and (min-width: 1280px) {
 
-        position: absolute;
+
         bottom: 75px;
-        right: calc(100% - (50% + 640px));
+        // right: calc(100% - (50% - 640px));
+        right: 20%;
     }
 }

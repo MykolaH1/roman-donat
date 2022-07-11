@@ -1,10 +1,36 @@
+// ::before {
+//       content: '';
+//       position: absolute;
+
+//       min-width: 16px;
+//       min-height: 16px;
+//       left: 0;
+//       top: 2px;
+
+//       background-image: url(../images/program/list_icon.svg);
+//       background-repeat: no-repeat;
+
+//       @media screen and (min-width: 1280px) {
+//         top: 4px;
+
 .registration {
   margin-right: auto;
   margin-left: auto;
   padding-top: 0;
   padding-bottom: 32px;
 
-  scroll-behavior: smooth;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 25%;
+    z-index: 1000;
+    height: 100;
+    width: 100%;
+    background-repeat: no-repeat;
+
+    background-image: url(../images/registration/img-1_md.png);
+    background-position: right 0px bottom 196px;
+  }
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
@@ -19,10 +45,8 @@
       display: none;
     }
 
-    background-image: url(../images/registration/img-1_md.png),
-      url(../images/registration/img-2_md.png);
-    background-position: left 0px bottom 196px, top 44px right -38.74px;
-    transform: rotate(78.97deg), rotate(-47.68deg);
+    background-image: url(../images/registration/img-2_md.png);
+    background-position: top 44px right -38.74px;
     background-repeat: no-repeat;
   }
 
@@ -32,7 +56,6 @@
     background-image: url(../images/registration/img-1_lg.png),
       url(../images/registration/img-2_lg.png);
     background-position: left 85px bottom 240px, top 44px right -38.74px;
-    transform: rotate(69.49deg), rotate(-47.68deg);
     background-repeat: no-repeat;
     padding-bottom: 180px;
   }
@@ -159,10 +182,9 @@
   cursor: pointer;
   &:hover,
   &:focus {
-
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-            0px 2px 1px rgba(0, 0, 0, 0.2);
-    }
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .registration-mobile {
@@ -281,12 +303,11 @@
     background: #ab816c;
     border-radius: 25px;
     border: 0;
-    
+
     &:hover,
     &:focus {
-  
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-              0px 2px 1px rgba(0, 0, 0, 0.2);
-      }
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    }
   }
 }
