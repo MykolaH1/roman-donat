@@ -18,10 +18,8 @@
   justify-content: center;
 }
 
-.about__info {
-  max-width: 280px;
-  margin-left: auto;
-  margin-right: auto;
+.about__img {
+  width: 100%;
 }
 
 .about__title {
@@ -43,8 +41,13 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
+  margin-bottom: 16px;
 
   color: var(--primary-text-color);
+}
+
+.about__text:nth-child(2n) {
+  margin-bottom: 25px;
 }
 
 .about__text--down {
@@ -70,6 +73,7 @@
   background-color: var(--white-color);
   border: none;
   display: block;
+  padding: 0px;
 }
 .about__spoon {
   display: none;
@@ -110,9 +114,11 @@
 
   .about__text {
     margin-top: 0px;
+    margin-bottom: 25px;
   }
 
   .about__text--down {
+    display: block;
     margin-bottom: 0px;
   }
 
