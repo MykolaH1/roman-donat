@@ -135,14 +135,14 @@
     display: block;
     position: relative;
     z-index: 10;
-    left: -17px;
+    left: -130px;
     top: -591px;
     transform-origin: center left;
     transition-duration: 1000ms;
   }
 
   .about__spoon:hover {
-    left: -15px;
+    left: -130px;
     transform: rotate(15deg);
     transition: transform 5000ms cubic-bezier(0.075, 0.82, 0.165, 1);
   }
