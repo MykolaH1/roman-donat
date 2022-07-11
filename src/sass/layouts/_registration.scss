@@ -4,6 +4,9 @@
   padding-top: 0;
   padding-bottom: 32px;
 
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+
   @media screen and (min-width: 768px) {
     max-width: 768px;
     padding-bottom: 80px;

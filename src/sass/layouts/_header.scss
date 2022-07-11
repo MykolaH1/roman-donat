@@ -204,6 +204,11 @@
   }
 
   .register-btn {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     width: 145px;
     height: 40px;
     background-color: var(--buttom-bcg-color);
