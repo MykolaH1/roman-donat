@@ -96,7 +96,7 @@
     display: none;
 
     @media screen and (min-width: 1280px) {
-      display: block;
+      display: inline;
     }
   }
 
@@ -313,4 +313,12 @@
   100% {
     transform: scale(1) rotate(359deg);
   }
+}
+
+
+.prog__btn{
+  @media screen and (max-width: 1279px) {
+    display: flex;
+  }
+  
 }
