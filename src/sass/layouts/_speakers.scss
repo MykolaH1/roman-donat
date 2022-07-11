@@ -1,11 +1,20 @@
 .speakers {
+  margin-top: 16px;
   max-width: 100%;
 
   margin-left: auto;
   margin-right: auto;
 
   @media screen and (min-width: 480px) {
-    max-width: 280px;
+    max-width: 480px;
+
+    border-radius: 20px;
+  }
+  @media screen and (min-width: 480px), (max-width:767px) {
+
+    background: var(--primary-bcg-color) url('../images/background/bg-speakers_sm.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   @media screen and (min-width: 768px) {
@@ -40,23 +49,13 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  
   gap: 16px;
-  @media screen and (max-width: 480px) {
+  @media screen and (min-width: 480px) {
     max-width: 280px;
-    
-  }
-  @media screen and (max-width: 767px) {
-    background: var(--primary-bcg-color)
-      url('../images/background/bg-speakers_sm.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-radius: 20px;
   }
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    background: var(--primary-bcg-color)
-      url('../images/background/bg-speakers_md.svg');
-
-    background-repeat: no-repeat;
+    max-width: 768px;
     border-radius: 40px;
 
     padding-top: 155px;
@@ -65,6 +64,7 @@
   }
 
   @media screen and (min-width: 1280px) {
+    max-width: 1280px;
     gap: 103px;
     justify-content: space-between;
 
