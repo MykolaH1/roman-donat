@@ -47,6 +47,43 @@ body {
 
   @media screen and (min-width: 1280px) {
     background-color: #fffff9;
+    background-image: url(../images/background/bg-header_lg.svg);
+    background-size: 1280px 1035px;
+    background-position: top center;
+  }
+
+  margin: 0px;
+
+  font-family: 'Montserrat';
+  font-size: 16px;
+  line-height: calc(20px / 16px);
+  color: #2e2520;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: calc(22px / 18px);
+  }
+
+  @media screen and (min-width: 200px) {
+    background-image: url(../images/background/bg.png);
+    background-size: 324px 1303px;
+    background-position: center 3100px;
+  }
+
+  @media screen and (min-width: 480px) {
+    background-image: url(../images/background/bg.png);
+    background-size: 324px 1303px;
+    background-position: center 4040px;
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/background/vector-13.png);
+    background-size: 940px 1520px;
+    background-position: center 2880px;
+  }
+  @media screen and (min-width: 1280px) {
+    // background-image: url(../images/background/vector-lg.png);
+    // background-size: 1320px 2100px;
+    // background-position: center 3324px;
     background-image: url(../images/background/bg-header_lg.svg),
       url(../images/background/bg-bottom_lg.svg);
     background-size: 1280px 1035px, 1288px 2073px;
