@@ -16,10 +16,6 @@
 
 }
 
-// .footer.container {
-//     position: relative;
-// }
-
 .social {
     display: flex;
     justify-content: center;
@@ -60,6 +56,7 @@
 
 
 .contact-nav {
+
     display: flex;
     justify-content: space-between;
     @include FontWSL (400, 16px, 1.25);
@@ -122,16 +119,10 @@
     }
 
 
-    @media screen and (min-width: 768px) {
-
-        // right: calc(100% - 20px);
-    }
-
     @media screen and (min-width: 1280px) {
 
 
         bottom: 75px;
-        // right: calc(100% - (50% - 640px));
-        right: 20%;
+        right: 0;
     }
 }
