@@ -15,44 +15,47 @@ body {
 
   @media screen and (min-width: 360px) {
     background-size: 100%;
-    background-position: center top -30px, center bottom 211px;
+    background-position: center top -30px, center bottom 120px;
   }
 
   @media screen and (min-width: 375px) {
     background-size: 100%;
-    background-position: center top -40px, center bottom 211px;
+    background-position: center top -40px, center bottom 70px;
   }
 
   @media screen and (min-width: 390px) {
     background-size: 100%;
-    background-position: center top -60px, center bottom 211px;
+    background-position: center top -60px, center bottom;
   }
 
-  @media screen and (min-width: 414px) {
+  @media screen and (min-width: 400px) {
+    background-image: url(../images/background/bg-header_sm.svg),
+      url(../images/background/bg-bottom_msm.svg);
     background-size: 100%;
-    background-position: center top -90px, center bottom 211px;
+    background-position: center top -90px, center bottom 190px;
   }
 
   @media screen and (min-width: 480px) {
     background-size: 480px;
-    background-position: center top -160px, center bottom 211px;
+    background-position: center top -160px, center bottom 30px;
   }
 
   @media screen and (min-width: 768px) {
     background-image: url(../images/background/bg-header_md.svg),
       url(../images/background/bg-bottom_md.svg);
     background-size: 769px 622px, 940px 1456px;
-    background-position: center top, center bottom 72px;
+    background-position: center top, center bottom 110px;
   }
 
   @media screen and (min-width: 1280px) {
     background-color: #fffff9;
-    background-image: url(../images/background/bg-header_lg.svg);
-    background-size: 1280px 1035px;
-    background-position: top center;
+    background-image: url(../images/background/bg-header_lg.svg),
+      url(../images/background/bg-bottom_lg.svg);
+    background-size: 1280px 1035px, 1288px 2073px;
+    background-position: center top, center bottom;
   }
 
-  margin: 0px;
+  /*  margin: 0px;
 
   font-family: 'Montserrat';
   font-size: 16px;
@@ -88,7 +91,7 @@ body {
       url(../images/background/bg-bottom_lg.svg);
     background-size: 1280px 1035px, 1288px 2073px;
     background-position: top center, center bottom;
-  }
+  } */
 }
 
 .container {
