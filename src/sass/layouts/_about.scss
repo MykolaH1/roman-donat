@@ -1,14 +1,8 @@
 .about {
-  position: absolute;
-  top: 324px;
-  left: 0;
-  right: 0;
-
-  @media screen and (min-width: 768px) {
-    top: 365px;
-  }
-
   @media screen and (min-width: 1280px) {
+    position: absolute;
+    left: 0;
+    right: 0;
     top: 550px;
   }
 }

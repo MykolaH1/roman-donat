@@ -1,7 +1,7 @@
 .header {
   position: relative;
   padding-top: 16px;
-  min-height: 1096px;
+  min-height: 320px;
   max-width: 480px;
   margin-left: auto;
   margin-right: auto;
@@ -21,14 +21,14 @@
 
   @media screen and (min-width: 768px) {
     position: relative;
-    min-height: 767px;
+    min-height: 368px;
     padding-top: 24px;
     max-width: 768px;
     justify-content: start;
     background-image: url(../images/header/img-1_md.png);
     background-repeat: no-repeat;
     background-position: top right 102px;
-    background-size: 377px 553px;
+    background-size: 377px 540px;
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
