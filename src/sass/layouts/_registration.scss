@@ -4,7 +4,12 @@
   padding-top: 0;
   padding-bottom: 32px;
 
-  scroll-behavior: smooth;
+  &::before {
+    content: ' ';
+    background-image: url(../images/registration/img-1_md.png);
+    background-position: right 0px bottom 196px;
+    transform: rotate(78.97deg);
+  }
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
