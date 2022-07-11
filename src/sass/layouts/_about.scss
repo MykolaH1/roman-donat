@@ -129,13 +129,22 @@
     margin-bottom: 30px;
   }
 
-  .about__text--down {
-    display: block;
-  }
 
-  .about__btn {
+
+
+
+  .about__text--down {
+    display: inline;
+  }
+  .about__btn{
     display: none;
   }
+
+
+
+
+
+
 
   .about__spoon {
     display: block;
@@ -151,5 +160,21 @@
     left: -130px;
     transform: rotate(15deg);
     transition: transform 5000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  
+
+
+}
+
+
+@media screen and (max-width: 1279px) {
+  .about__text--down {}
+  .about__btn .is-hidden {
+    display: none;
+  }
+  .about__btn {
+    cursor:pointer;
+    background-color: transparent;
   }
 }
