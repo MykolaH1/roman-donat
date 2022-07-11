@@ -1,19 +1,17 @@
 .footer {
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 46px;
-    // position: relative;
-    overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 46px;
+  // position: relative;
+  overflow: hidden;
 
-    @media screen and (min-width: 768px) {
-        padding-bottom: 83px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 83px;
+  }
 
-    }
-
-    @media screen and (min-width: 1280px) {
-        padding-bottom: 232px;
-    }
-
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 232px;
+  }
 }
 
 // .footer.container {
@@ -21,117 +19,108 @@
 // }
 
 .social {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    margin: 0;
-    margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 0;
+  margin-bottom: 32px;
 
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+  }
 
-    @media screen and (min-width: 768px) {
-        margin-bottom: 60px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        margin-bottom: 73px;
-    }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 73px;
+  }
 }
 
 .social__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
 
-    border-radius: 50%;
-    fill: var(--primary-text-color);
+  border-radius: 50%;
+  fill: var(--primary-text-color);
 
-    transition-property: fill, background-color;
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: var(--white-color);
+    background-color: var(--buttom-bcg-color);
+  }
+}
+
+.contact-nav {
+  display: flex;
+  justify-content: space-between;
+  @include FontWSL(400, 16px, 1.25);
+
+  & a {
+    color: var(--primary-text-color);
+    transition-property: fill, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
-        fill: var(--white-color);
-        background-color: var(--buttom-bcg-color);
+      color: var(--buttom-bcg-color);
+      fill: var(--buttom-bcg-color);
     }
-}
+  }
 
+  @media screen and (min-width: 768px) {
+    padding-right: 60px;
+  }
 
-.contact-nav {
-    display: flex;
-    justify-content: space-between;
-    @include FontWSL (400, 16px, 1.25);
-
-
-    & a {
-        color: var(--primary-text-color);
-        transition-property: fill, color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-        &:hover,
-        &:focus {
-            color: var(--buttom-bcg-color);
-            fill: var(--buttom-bcg-color);
-        }
-    }
-
-    @media screen and (min-width: 768px) {
-        padding-right: 60px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        padding-left: 107px;
-        padding-right: 304px;
-    }
+  @media screen and (min-width: 1280px) {
+    padding-left: 107px;
+    padding-right: 304px;
+  }
 }
 
 .footer .section {
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
 .flour picture {
-    bottom: 0;
-    right: -8%;
-    position: absolute;
-    z-index: -1;
+  bottom: 0;
+  right: -8%;
+  position: absolute;
+  z-index: -1;
 
-    animation-name: spin;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+  animation-name: spin;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 
-
-    @keyframes spin {
-        0% {
-            transform: rotate(0deg);
-        }
-
-        50% {
-            transform: rotate(10deg);
-        }
-
-        100% {
-            transform: rotate(0deg);
-        }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
     }
 
-
-    @media screen and (min-width: 768px) {
-
-        // right: calc(100% - 20px);
+    50% {
+      transform: rotate(10deg);
     }
 
-    @media screen and (min-width: 1280px) {
-
-
-        bottom: 75px;
-        // right: calc(100% - (50% - 640px));
-        right: 20%;
+    100% {
+      transform: rotate(0deg);
     }
+  }
+
+  @media screen and (min-width: 768px) {
+    // right: calc(100% - 20px);
+  }
+
+  @media screen and (min-width: 1280px) {
+    bottom: 75px;
+    // right: calc(100% - (50% - 640px));
+    right: 20%;
+  }
 }
