@@ -4,6 +4,14 @@
   padding-top: 0;
   padding-bottom: 32px;
 
+  &::before {
+    position: absolute;
+    display: block;
+    background-image: url(../images/registration/img-1_lg.png);
+    background-position: right 0px bottom 196px;
+    background-repeat: no-repeat;
+  }
+
   @media screen and (min-width: 768px) {
     max-width: 768px;
     padding-bottom: 80px;
@@ -19,8 +27,8 @@
 
     background-image: url(../images/registration/img-1_md.png),
       url(../images/registration/img-2_md.png);
+
     background-position: left 0px bottom 196px, top 44px right -38.74px;
-    transform: rotate(78.97deg), rotate(-47.68deg);
     background-repeat: no-repeat;
   }
 
@@ -30,7 +38,6 @@
     background-image: url(../images/registration/img-1_lg.png),
       url(../images/registration/img-2_lg.png);
     background-position: left 85px bottom 240px, top 44px right -38.74px;
-    transform: rotate(69.49deg), rotate(-47.68deg);
     background-repeat: no-repeat;
     padding-bottom: 180px;
   }
@@ -53,7 +60,6 @@
 }
 
 .registration_content {
-  display: none;
   max-height: 436px;
   width: 100%;
   display: flex;
@@ -144,8 +150,8 @@
   font-family: 'Caveat Brush';
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: calc(23 / 18);
   text-align: center;
 
   color: #ffffff;
@@ -153,6 +159,20 @@
   background: #ab816c;
   border-radius: 25px;
   border: 0;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 1px 3px #0000001f, 0 1px 1px #00000024, 0 2px 1px #0003;
+  }
 }
 
 .registration-mobile {

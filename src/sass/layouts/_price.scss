@@ -215,10 +215,20 @@
   font-size: 18px;
   line-height: calc(23 / 18);
   color: #ffffff;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 1px 3px #0000001f, 0 1px 1px #00000024, 0 2px 1px #0003;
+  }
 
   @media screen and (min-width: 768px) {
   }
 
   @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    line-height: 30px;
   }
 }
