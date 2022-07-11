@@ -14,7 +14,7 @@ body {
   // background-position-x: center, center;
   // background-position-y: top, bottom 211px;
   background-position: top, bottom;
-  background-size: 100% 460px 100% 1594px;
+  background-size: 100% 460px, 100% 1594px;
 
   @media screen and (min-width: 768px) {
     background-image: url(../images/background/bg-header_md.png),
@@ -23,7 +23,7 @@ body {
     // background-position-x: center, center;
     // background-position-y: top, bottom 101px;
     background-position: top, bottom;
-    background-size: 100% 622px 100% 1660px;
+    background-size: 100% 622px, 100% 1660px;
   }
 
   @media screen and (min-width: 1280px) {
