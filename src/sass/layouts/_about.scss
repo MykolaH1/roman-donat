@@ -1,38 +1,19 @@
 .about {
-  position: absolute;
-  top: 324px;
-  left: 0;
-  right: 0;
-
-  @media screen and (min-width: 768px) {
-    top: 365px;
-  }
-
   @media screen and (min-width: 1280px) {
-    top: 500px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 550px;
   }
 }
 
-.about__container {
-  /* background-color: var(--form-bcg-color); */
-}
-
-// .about__img {
-// }
-
-// }
 .about__picture {
   display: flex;
   justify-content: center;
 }
 
-// .about__title {
-// }
-
-.about__info {
-  max-width: 280px;
-  margin-left: auto;
-  margin-right: auto;
+.about__img {
+  width: 100%;
 }
 
 .about__title {
@@ -54,8 +35,13 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
+  margin-bottom: 16px;
 
   color: var(--primary-text-color);
+}
+
+.about__text:nth-child(2n) {
+  margin-bottom: 25px;
 }
 
 .about__text--down {
@@ -81,6 +67,10 @@
   background-color: var(--white-color);
   border: none;
   display: block;
+  padding: 0px;
+}
+.about__spoon {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -102,6 +92,11 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .about__container {
+    position: relative;
+    justify-content: center;
+  }
+
   .about__text,
   .about__text--down {
     font-family: 'Montserrat';
@@ -110,11 +105,14 @@
 
     color: var(--primary-text-color);
   }
+
   .about__text {
     margin-top: 0px;
+    margin-bottom: 25px;
   }
 
   .about__text--down {
+    display: block;
     margin-bottom: 0px;
   }
 
@@ -131,11 +129,52 @@
     margin-bottom: 30px;
   }
 
+
+
+
+
   .about__text--down {
-    display: block;
+    display: inline;
+  }
+  .about__btn{
+    display: none;
   }
 
-  .about__btn {
+
+
+
+
+
+
+  .about__spoon {
+    display: block;
+    position: relative;
+    z-index: 10;
+    left: -130px;
+    top: -591px;
+    transform-origin: center left;
+    transition-duration: 1000ms;
+  }
+
+  .about__spoon:hover {
+    left: -130px;
+    transform: rotate(15deg);
+    transition: transform 5000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  
+
+
+}
+
+
+@media screen and (max-width: 1279px) {
+  .about__text--down {}
+  .about__btn .is-hidden {
     display: none;
+  }
+  .about__btn {
+    cursor:pointer;
+    background-color: transparent;
   }
 }

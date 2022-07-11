@@ -5,8 +5,8 @@
         <source
           media="(min-width:1280px)"
           srcset="
-            ./images/about_us/img-1_lg.png    1x,
-            ./images/about_us/img-2_lg@2x.png 2x
+            ./images/about_us/piclll.png 1x,
+            ./images/about_us/pic@2x.png 2x
           "
         />
         <source
@@ -17,7 +17,7 @@
           "
         />
         <source
-          media="(max-width:320px)"
+          media="(max-width:767px)"
           srcset="
             ./images/about_us/img-1_sm.png    1x,
             ./images/about_us/img-2_sm@2x.png 2x
@@ -44,13 +44,32 @@
           recognition for excellence.
         </p>
 
-        <p class="about__text--down">
+        <p class="about__text--down" data-text>
           We are going to teach you how to cook with passion and sparkles in
           your eyes! We love what we do and believe you will enjoy our cooking
           atmosphere!
         </p>
-        <button class="about__btn" type="button">Read more</button>
+
+        <button class="about__btn" type="button" data-btn-more>
+          <span data-text-more>Read more</span>
+          <span class="is-hidden" data-text-less >Less</span>
+        </button>
+
       </div>
     </div>
+    <picture>
+      <source
+        media="(min-width:1280px)"
+        srcset="
+          ./images/about_us/spoon-1.png    1x,
+          ./images/about_us/spoon-1@2x.png 2x
+        "
+      />
+      <img
+        class="about__spoon"
+        src="./images/about_us/spoon-1.png"
+        alt="decorative spoon"
+      />
+    </picture>
   </div>
 </section>
