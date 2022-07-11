@@ -33,38 +33,6 @@
     background-position: left 85px bottom 240px, top 44px right -38.74px;
     padding-bottom: 180px;
   }
-  &:hover {
-    -webkit-animation: rotating 30s infinite linear;
-    -moz-animation: rotating 30s infinite linear;
-    -ms-animation: rotating 30s infinite linear;
-    -o-animation: rotating 30s infinite linear;
-    animation: rotating 30s infinite linear;
-    @-webkit-keyframes rotating {
-      to {
-        -webkit-transform: rotate(360deg);
-      }
-    }
-    @-moz-keyframes rotating {
-      to {
-        -moz-transform: rotate(360deg);
-      }
-    }
-    @-ms-keyframes rotating {
-      to {
-        -ms-transform: rotate(360deg);
-      }
-    }
-    @-o-keyframes rotating {
-      to {
-        -o-transform: rotate(360deg);
-      }
-    }
-    @keyframes rotating {
-      to {
-        transform: rotate(360deg);
-      }
-    }
-  }
 }
 
 .registration__main {
@@ -96,6 +64,44 @@
       background-repeat: no-repeat;
       background-position: left 85px bottom 240px;
       padding-bottom: 180px;
+    }
+
+    &:hover {
+      -webkit-animation: rotating 30s infinite linear;
+      -moz-animation: rotating 30s infinite linear;
+      -ms-animation: rotating 30s infinite linear;
+      -o-animation: rotating 30s infinite linear;
+      animation: rotating 30s infinite linear;
+
+      @-webkit-keyframes rotating {
+        to {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+
+      @-moz-keyframes rotating {
+        to {
+          -moz-transform: rotate(360deg);
+        }
+      }
+
+      @-ms-keyframes rotating {
+        to {
+          -ms-transform: rotate(360deg);
+        }
+      }
+
+      @-o-keyframes rotating {
+        to {
+          -o-transform: rotate(360deg);
+        }
+      }
+
+      @keyframes rotating {
+        to {
+          transform: rotate(360deg);
+        }
+      }
     }
   }
 }
