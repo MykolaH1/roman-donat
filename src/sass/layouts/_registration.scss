@@ -72,6 +72,11 @@
         (min-resolution: 2dppx) {
         background-image: url(../images/registration/img-1_md@2x.png);
       }
+      @keyframes donatanim {
+        100% {
+          transform: translateX(650px) rotate(360deg);
+        }
+      }
     }
 
     @media screen and (min-width: 1280px) {
@@ -88,7 +93,25 @@
         (min-resolution: 2dppx) {
         background-image: url(../images/registration/img-1_lg@2x.png);
       }
+      @keyframes donatanim {
+        100% {
+          transform: translateX(850px) rotate(360deg);
+        }
+      }
     }
+
+    animation-name: donatanim;
+    animation-duration: 10000ms;
+    animation-timing-function: ease-in-out;
+    transition-delay: 10000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    // @keyframes donatanim {
+    //   100% {
+    //     transform: translateX(850px) rotate(360deg);
+    //   }
+    // }
   }
 }
 
