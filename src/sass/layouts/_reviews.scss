@@ -209,8 +209,10 @@
 
   .slick-current .img-wills {
     width: 336px;
-    height: 270px;
-    padding-top: 30px;
+    height: 250px;
+    margin-top: 76px;
+
+    // padding-top: 30px;
 
     // transition: width 955ms cubic-bezier(0.075, 0.82, 0.165, 1);
   }
@@ -288,7 +290,8 @@
   .slick-current .img-wills {
     width: 394px;
     height: 394px;
-    padding-top: 30px;
+    // padding-top: 15px;
+    margin-top: 146px;
 
     transition: padding-top 955ms cubic-bezier(0.075, 0.82, 0.165, 1);
   }
