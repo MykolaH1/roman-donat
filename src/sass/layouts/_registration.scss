@@ -4,11 +4,10 @@
   padding-top: 0;
   padding-bottom: 32px;
 
-  scroll-behavior: smooth;
-
   @media screen and (min-width: 768px) {
     max-width: 768px;
     padding-bottom: 80px;
+
     .registration__main {
       display: flex;
       flex-direction: column;
@@ -19,10 +18,8 @@
       display: none;
     }
 
-    background-image: url(../images/registration/img-1_md.png),
-      url(../images/registration/img-2_md.png);
-    background-position: left 0px bottom 196px, top 44px right -38.74px;
-    transform: rotate(78.97deg), rotate(-47.68deg);
+    background-image: url(../images/registration/img-2_md.png);
+    background-position: top 44px right -38.74px;
     background-repeat: no-repeat;
   }
 
@@ -31,15 +28,40 @@
     padding-bottom: 180px;
     background-image: url(../images/registration/img-1_lg.png),
       url(../images/registration/img-2_lg.png);
-    background-position: left 85px bottom 240px, top 44px right -38.74px;
-    transform: rotate(69.49deg), rotate(-47.68deg);
     background-repeat: no-repeat;
+    background-position: left 85px bottom 240px, top 44px right -38.74px;
     padding-bottom: 180px;
   }
 }
 
 .registration__main {
   display: none;
+
+  &::before {
+    content: ' ';
+    position: absolute;
+    z-index: -1;
+    width: 200px;
+    height: 200px;
+    left: 0px;
+    bottom: 196px;
+
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/registration/img-1_md.png);
+
+      background-repeat: no-repeat;
+      background-size: 200px 200px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      max-width: 1280px;
+      padding-bottom: 180px;
+      background-image: url(../images/registration/img-1_lg.png);
+      background-repeat: no-repeat;
+      background-position: left 85px bottom 240px;
+      padding-bottom: 180px;
+    }
+  }
 }
 
 .registration_heading {
@@ -157,12 +179,12 @@
   border: 0;
 
   cursor: pointer;
+
   &:hover,
   &:focus {
-
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-            0px 2px 1px rgba(0, 0, 0, 0.2);
-    }
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .registration-mobile {
@@ -281,12 +303,11 @@
     background: #ab816c;
     border-radius: 25px;
     border: 0;
-    
+
     &:hover,
     &:focus {
-  
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-              0px 2px 1px rgba(0, 0, 0, 0.2);
-      }
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    }
   }
 }
