@@ -5,8 +5,9 @@
   padding-bottom: 32px;
 
   @media screen and (min-width: 768px) {
-    max-width: 768px;
     padding-bottom: 80px;
+    max-width: 768px;
+    max-height: 100%;
 
     .registration__main {
       display: flex;
@@ -19,18 +20,31 @@
     }
 
     background-image: url(../images/registration/img-2_md.png);
-    background-position: top 44px right -38.74px;
+    background-position: top 122px right -96.74px;
     background-repeat: no-repeat;
+    background-size: contain;
+    max-height: 100%;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/registration/img-2_md@2x.png);
+    }
   }
 
   @media screen and (min-width: 1280px) {
     max-width: 1280px;
-    padding-bottom: 180px;
-    background-image: url(../images/registration/img-1_lg.png),
-      url(../images/registration/img-2_lg.png);
+    background-image: url(../images/registration/img-2_lg.png);
     background-repeat: no-repeat;
-    background-position: left 85px bottom 240px, top 44px right -38.74px;
-    padding-bottom: 180px;
+    background-position: top 44px right -38.74px;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/registration/img-2_lg@2x.png);
+    }
   }
 }
 
@@ -41,25 +55,38 @@
     content: ' ';
     position: absolute;
     z-index: -1;
-    width: 200px;
-    height: 200px;
-    left: 0px;
-    bottom: 196px;
 
     @media screen and (min-width: 768px) {
       background-image: url(../images/registration/img-1_md.png);
-
       background-repeat: no-repeat;
-      background-size: 200px 200px;
+      width: 200px;
+      height: 200px;
+      left: -15px;
+      top: -5px;
+      background-size: contain;
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/registration/img-1_md@2x.png);
+      }
     }
 
     @media screen and (min-width: 1280px) {
-      max-width: 1280px;
-      padding-bottom: 180px;
       background-image: url(../images/registration/img-1_lg.png);
       background-repeat: no-repeat;
-      background-position: left 85px bottom 240px;
-      padding-bottom: 180px;
+      width: 255px;
+      height: 255px;
+      left: 85px;
+      top: 0px;
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/registration/img-1_lg@2x.png);
+      }
     }
   }
 }
