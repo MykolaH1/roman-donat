@@ -7,6 +7,7 @@
   }
 
   @media screen and (min-width: 1280px) {
+    position: relative;
     min-height: 1155px;
   }
 
@@ -24,11 +25,26 @@
     }
   }
 
+  @media screen and (min-width: 1280px) {
+    position: static;
+    min-height: 1155px;
+    background-image: url(../images/header/img-1_lg.png);
+    background-repeat: no-repeat;
+    background-position: top -170px right calc(50% - 320px);
+    background-size: 794px 1116px;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/header/img-1_md@2x.png);
+    }
+  }
+
   &__container {
     height: 100%;
 
     @media screen and (min-width: 768px) {
-      position: relative;
       position: relative;
       min-height: 368px;
       padding-top: 24px;
@@ -37,24 +53,6 @@
       background-repeat: no-repeat;
       background-position: top right 100px;
       background-size: 377px 520px;
-
-      @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url(../images/header/img-1_md@2x.png);
-      }
-    }
-
-    @media screen and (min-width: 1280px) {
-      position: relative;
-      max-width: 100%;
-      min-height: 1155px;
-      padding-top: 46px;
-      background-image: url(../images/header/img-1_lg.png);
-      background-repeat: no-repeat;
-      background-position: top -170px right calc(50% - 320px);
-      background-size: 794px 1116px;
 
       @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
