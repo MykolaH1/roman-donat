@@ -17,7 +17,7 @@ asNavFor: '.text__container' ,
   centerMode: true,
   centerPadding: '0',
   focusOnSelect: true,
- 
+  variableWidth: true,
   // the magic
   responsive: [{
  
