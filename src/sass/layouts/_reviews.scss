@@ -119,6 +119,7 @@
   align-items: center;
   gap: 12px;
   margin-top: 32px;
+  margin-bottom: 0px;
 
   &::after,
   &::before {
@@ -207,6 +208,10 @@
     width: 152px;
   }
 
+  .slick-dots {
+    margin-bottom: 0px;
+  }
+
   .slick-current .img-wills {
     width: 336px;
     margin-top: 76px;
@@ -245,6 +250,8 @@
     font-size: 18px;
     line-height: 1.22;
     margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .reviews__slider {
@@ -270,6 +277,7 @@
     align-items: center;
     gap: 12px;
     margin-top: 32px;
+    margin-bottom: 0px;
 
     &::after,
     &::before {
