@@ -388,6 +388,14 @@
     &::-webkit-input-placeholder {
       color: rgba(171, 129, 108, 0.5);
     }
+
+    &:not(:placeholder-shown):required:valid {
+      border-bottom: 1px solid rgb(32, 247, 47);
+    }
+
+    &:not(:placeholder-shown):required:invalid {
+      border-bottom: 1px solid #ed6d64;
+    }
   }
 
   &__btn {
