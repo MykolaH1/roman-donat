@@ -8,11 +8,6 @@
   }
 }
 
-.about__picture {
-  display: flex;
-  justify-content: center;
-}
-
 .about__img {
   width: 100%;
 }
@@ -77,18 +72,19 @@
 @media screen and (min-width: 768px) {
   .about__container {
     display: flex;
-    align-items: flex-end;
   }
 
   .about__info {
     max-width: 336px;
     margin-left: 32px;
+    padding-top: 15px;
   }
 
   .about__title {
     display: flex;
     justify-content: flex-start;
     margin-top: 0px;
+    margin-bottom: 16px;
   }
 }
 
@@ -96,6 +92,8 @@
   .about__container {
     position: relative;
     justify-content: center;
+    align-items: center;
+    display: flex;
   }
 
   .about__text,
@@ -121,6 +119,7 @@
     max-width: 392px;
     margin-left: 140px;
     margin-right: 0px;
+    padding-top: 0px;
   }
 
   .about__title {

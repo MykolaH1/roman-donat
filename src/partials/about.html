@@ -52,24 +52,21 @@
 
         <button class="about__btn" type="button" data-btn-more>
           <span data-text-more>Read more</span>
-          <span class="is-hidden" data-text-less >Less</span>
+          <span class="is-hidden" data-text-less>Less</span>
         </button>
-
       </div>
     </div>
-    <picture>
-      <source
-        media="(min-width:1280px)"
-        srcset="
-          ./images/about_us/spoon-1.png    1x,
-          ./images/about_us/spoon-1@2x.png 2x
-        "
-      />
-      <img
-        class="about__spoon"
-        src="./images/about_us/spoon-1.png"
-        alt="decorative spoon"
-      />
-    </picture>
+    <div class="about__spoon">
+      <picture>
+        <source
+          media="(min-width:1280px)"
+          srcset="
+            ./images/about_us/spoon-1.png    1x,
+            ./images/about_us/spoon-1@2x.png 2x
+          "
+        />
+        <img src="./images/about_us/spoon-1.png" alt="decorative spoon" />
+      </picture>
+    </div>
   </div>
 </section>
