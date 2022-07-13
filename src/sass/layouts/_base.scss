@@ -33,6 +33,10 @@ body {
   }
 }
 
+body.is-open {
+  overflow-y: hidden;
+}
+
 .container {
   max-width: 480px;
   margin-left: auto;
