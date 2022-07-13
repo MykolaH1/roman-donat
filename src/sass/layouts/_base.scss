@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   position: relative;
   margin: 0;
@@ -10,19 +14,13 @@ body {
   background-image: url(../images/background/bg-header_sm.png),
     url(../images/background/bg-bottom_sm.png);
   background-repeat: no-repeat;
-  // background-size: 100% 460px, 100% 1303px;
-  // background-position-x: center, center;
-  // background-position-y: top, bottom 211px;
-  background-position: top, bottom;
+  background-position: left top, left bottom 211px;
   background-size: 100% 460px, 100% 1594px;
 
   @media screen and (min-width: 768px) {
     background-image: url(../images/background/bg-header_md.png),
       url(../images/background/bg-bottom_md.png);
-    // background-size: 100% 622px, 100% 1456px;
-    // background-position-x: center, center;
-    // background-position-y: top, bottom 101px;
-    background-position: top, bottom;
+    background-position: left top, left bottom 72px;
     background-size: 100% 622px, 100% 1660px;
   }
 
@@ -31,8 +29,7 @@ body {
     background-image: url(../images/background/bg-header_lg.png),
       url(../images/background/bg-bottom_lg.png);
     background-size: 100% 1035px, 100% 2073px;
-    background-position-x: center, center;
-    background-position-y: top, bottom;
+    background-position: center top, center bottom;
   }
 }
 
