@@ -1,0 +1,2 @@
+$(".pagination");$(".reviews__container").slick({infinite:!0,slidesToShow:3,slidesToScroll:1,arrows:!1,asNavFor:".text__container",centerMode:!0,centerPadding:"0",focusOnSelect:!0,variableWidth:!0,responsive:[{breakpoint:1280,settings:{slidesToShow:3,infinite:!0}},{breakpoint:1279,settings:{slidesToShow:3}},{breakpoint:767,settings:{slidesToShow:1}}]}),$(".text__container").slick({slidesToShow:1,slidesToScroll:1,arrows:!1,dots:!0,asNavFor:".reviews__container"});
+//# sourceMappingURL=index.79ee7bf0.js.map
