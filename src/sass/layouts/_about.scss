@@ -121,7 +121,6 @@
     max-width: 392px;
     margin-left: 140px;
     margin-right: 0px;
-    padding-bottom: 30px;
   }
 
   .about__title {
@@ -155,8 +154,6 @@
 }
 
 @media screen and (max-width: 1279px) {
-  // .about__text--down {
-  // }
   .about__btn .is-hidden {
     display: none;
   }
