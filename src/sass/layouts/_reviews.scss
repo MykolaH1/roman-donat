@@ -245,6 +245,8 @@
     font-size: 18px;
     line-height: 1.22;
     margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .reviews__slider {
@@ -270,6 +272,7 @@
     align-items: center;
     gap: 12px;
     margin-top: 32px;
+    margin-bottom: 0px;
 
     &::after,
     &::before {
