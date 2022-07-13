@@ -15,13 +15,13 @@ body {
     url(../images/background/bg-bottom_sm.png);
   background-repeat: no-repeat;
   background-position: left top, left bottom 211px;
-  background-size: 100% 460px, 100% 1594px;
+  background-size: 100% 460px, 100% 1303px;
 
   @media screen and (min-width: 768px) {
     background-image: url(../images/background/bg-header_md.png),
       url(../images/background/bg-bottom_md.png);
     background-position: left top, left bottom 72px;
-    background-size: 100% 622px, 100% 1660px;
+    background-size: 100% 622px, 100% 1456px;
   }
 
   @media screen and (min-width: 1280px) {

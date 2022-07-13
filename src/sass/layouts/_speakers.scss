@@ -1,13 +1,9 @@
 .speakers {
-  padding-top: 16px;
 
   @media screen and (min-width: 768px) {
-    padding-top: 40px;
     padding-bottom: 40px;
   }
-  @media screen and (min-width: 1280px) {
-    padding-top: 80px;
-  }
+  
   &-container {
     padding-right: 0;
     padding-left: 0;
@@ -28,7 +24,7 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: 80px;
-  padding-bottom: 16px;
+  padding-bottom: 29px;
 
   display: flex;
   justify-content: space-evenly;
@@ -44,15 +40,15 @@
 
   @media screen and (min-width: 480px) {
     max-width: 480px;
-    row-gap: 16px;
-    column-gap: 45px;
+    // row-gap: 16px;
+    // column-gap: 32px;
   }
   @media screen and (min-width: 768px) {
     max-width: 768px;
     border-radius: 40px;
 
-    padding-top: 155px;
-    padding-bottom: 20px;
+    padding-top: 122px;
+    padding-bottom: 40px;
     gap: 32px;
 
     background: var(--primary-bcg-color) 
@@ -69,7 +65,7 @@
     padding-right: 107px;
     padding-left: 107px;
     padding-top: 179px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 
     background: var(--primary-bcg-color)
       url('../images/background/bg-speakers_lg.svg');
@@ -80,9 +76,11 @@
 
   &-item {
     max-width: 131px;
+    margin-bottom: 12px;
 
     @media screen and (min-width: 768px) {
       max-width: 152px;
+      margin-bottom: 0;
     }
 
     @media screen and (min-width: 1280px) {
@@ -95,22 +93,21 @@
   width: 131px;
   margin-right: auto;
   margin-left: auto;
-  padding-bottom: 12px;
+  margin-bottom: 12px;
 
   @media screen and (min-width: 768px) {
     max-width: 152px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
 
   @media screen and (min-width: 1280px) {
     max-width: 181px;
-    padding-bottom: 20px;
+
   }
 }
 
 .speakers_sub-title {
-  margin: 0;
-  padding-bottom: 12px;
+  margin: 0 0 12px 0;
 
   font-style: italic;
   font-weight: 700;
@@ -119,7 +116,7 @@
   text-align: center;
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 
     font-weight: 600;
     font-size: 18px;
@@ -129,8 +126,7 @@
 
 .speakers_text {
   max-width: 45vw;
-  margin: 0;
-  padding-bottom: 12px;
+  margin: 0 0 0 0;
 
   font-style: italic;
   font-size: 12px;
@@ -141,7 +137,6 @@
     font-weight: 500;
     font-size: 14px;
     line-height: calc(17px / 14px);
-    padding-bottom: 20px;
   }
   @media screen and (min-width: 1280px) {
     font-size: 16px;
