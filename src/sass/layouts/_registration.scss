@@ -39,7 +39,7 @@
     padding-bottom: 180px;
     background-image: url(../images/registration/img-2_lg.png);
     background-repeat: no-repeat;
-    background-position: top 44px right -38.74px;
+    background-position: bottom -105px right -38.74px;
     padding-bottom: 180px;
 
     @media (min-device-pixel-ratio: 2),
@@ -127,6 +127,9 @@
   line-height: calc(65 / 36);
   text-align: center;
   color: #2e2520;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
 }
 
 .registration_content {
@@ -146,6 +149,7 @@
 
   @media screen and (min-width: 768px) {
     max-width: 704px;
+    padding: 40px 0px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -160,7 +164,6 @@
   font-size: 20px;
   line-height: calc(24 / 20);
   text-align: right;
-
   color: #2e2520;
 }
 
