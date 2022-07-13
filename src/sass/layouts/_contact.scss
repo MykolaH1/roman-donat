@@ -42,7 +42,14 @@ textarea {
         font-weight: 400;
         font-size: 16px;
         line-height: 1.25;
+    }
 
+    &:not(:placeholder-shown):required:valid {
+        border-bottom: 1px solid rgb(32, 247, 47);
+    }
+
+    &:not(:placeholder-shown):required:invalid {
+        border-bottom: 1px solid #ed6d64;
     }
 
     @media screen and (min-width: 768px) {
