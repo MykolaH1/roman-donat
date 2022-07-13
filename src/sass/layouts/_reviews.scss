@@ -119,6 +119,7 @@
   align-items: center;
   gap: 12px;
   margin-top: 32px;
+  margin-bottom: 0px;
 
   &::after,
   &::before {
@@ -205,6 +206,10 @@
   }
   .img-wills {
     width: 152px;
+  }
+
+  .slick-dots {
+    margin-bottom: 0px;
   }
 
   .slick-current .img-wills {
