@@ -1,12 +1,15 @@
 .price {
-  padding-bottom: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 80px;
+    padding-top: 20px;
+    padding-bottom: 40px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 44px;
   }
 }
 
